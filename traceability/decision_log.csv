@@ -1,0 +1,17 @@
+id,decision_and_default,status,source
+DC-01,"Hosting provider and region — decided 2026-10-10 by the Owner: AWS, region ap-south-1 (Mumbai) for India data residency; DR/backup region ap-south-2 (Hyderabad); production applied only by a named human after the R0 gate approvals (§12.1; docs/12).",Decided,01_SOW.md §28
+DC-02,FX source and policy — default: `date=order` (A-08); compat presentation FX optional.,Pending (default applies),01_SOW.md §28
+DC-03,Shopify protected-data level — default: L1.,Pending (default applies),01_SOW.md §28
+DC-04,Capitalisation percentage — default: 0 % (§24).,Pending (default applies),01_SOW.md §28
+DC-05,Overlap of R2/R3 — default: sequential.,Pending (default applies),01_SOW.md §28
+DC-06,"Extended channels to adopt (Walmart, eBay, TikTok Shop) — *superseded by DC-15 (v0.3)*: all three are in R2.",Superseded,01_SOW.md §28
+DC-07,Optional AI explain layer — default: deferred to R5 with an INR cap.,Pending (default applies),01_SOW.md §28
+DC-08,Default P&L view — default: Sellerboard-compatible mode during the parallel run; the Owner may switch the default to the contribution view afterwards.,Pending (default applies),01_SOW.md §28
+DC-09,Tax master ownership and CA sign-off cadence — default: Finance controller owns; CA confirms ⚠ items before the R1 gate and on each rate notification.,Pending (default applies),01_SOW.md §28
+DC-10,"B2B invoice numbering — setting `numbering_mode` = `external` or `internal`. Default `external`: the application records the `doc_no` issued by the accounting system, entered at posting, and does not issue the statutory series (ASSUMPTION; A-11). `internal` would have the application issue a gap-free series at posting. To be decided before the B2B invoice slice of WP-31 starts.",Decided,01_SOW.md §28
+DC-11,Parallel-run exit sign-off — default: Finance controller signs variances; the Owner decides cut-over (§15).,Pending (default applies),01_SOW.md §28
+DC-12,Visual reskin timing to the RAMA brand — default: after Sellerboard cancellation; token-set change only (§10.1).,Pending (default applies),01_SOW.md §28
+DC-13,"Authorisation to start R0 (budget envelope for R0, developer assignment, AWS accounts) — default: none; Pending Owner sign-off. Required before WP-01 starts (see `docs/12_Developer_Handoff_Codex_AWS.md`).",Pending (default applies),01_SOW.md §28
+DC-14,"Marketing function omitted from the build (PPC, recommendations and automation, day parting, search terms and keyword research, Amazon Attribution, dual attribution and customer journeys, external-ads analytics, review-request e-mails, Klaviyo and marketing ad connectors); ad spend still read as a cost line; LTV, repeat customers and the repricer kept (§7.6) — decided by Owner 2026-10-10.",Decided,01_SOW.md §28
+DC-15,"All marketplaces in R2: every Amazon marketplace (NA/EU/FE) via the marketplace master (WP-38), Walmart US/CA/MX incl. WFS and Walmart Connect / SEM spend, eBay and TikTok Shop (WP-23); R2 renamed ""All markets & marketplaces"", 14 weeks (§7.7, §20) — decided 2026-10-10.",Decided,01_SOW.md §28
+DC-16,Build tool ChatGPT Codex (cloud tasks connected to GitHub; pull requests reviewed and merged by the developer; Codex code review on PRs); Claude Code pack optional; AWS deployment rules and UI/UX design unchanged (§12.2) — decided 2026-10-10.,Decided,01_SOW.md §28

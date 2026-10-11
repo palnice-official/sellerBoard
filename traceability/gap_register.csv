@@ -1,0 +1,17 @@
+id,vendor_release_or_observation_date,gap,sow_mapping,disposition
+GAP-001,2026-09-03,Repricer (S10) not visible in audited accounts — verify rollout/market availability,,Open
+GAP-002,2026-09-10,PPC Day Parting (beta) observed only as popup — feature not audited,,Open
+GAP-003,2026-09-10,MCP connector closed beta — no contract available,,Open
+GAP-004,2026-09-10,Amazon→Shopify listing/MCF connector functions (S19) — availability unverified,,Open
+GAP-006,2026-09-10,Custom buyer follow-up e-mails (Buyer-Seller Messaging) — out of scope (F-H08); revisit if needed,,Open
+GAP-007,2026-09-10,"First-party cookie / Shopify customer-journey attribution (F-E11) — CONDITIONAL, consent scope",,Open
+GAP-005,post-cutoff,Any blog.sellerboard.com post dated after 2026-09-03,,Open (monitor)
+GAP-008,2026-09-10 (late),Amazon Attribution campaign-level profit,"F-E16, CALC-060, CON-04","v0.2: adopt as CONDITIONAL → v0.3: OMITTED (marketing, DC-14)"
+GAP-009,2026-09-10 (late),FBM refund reasons,F-D02,Adopt (R1)
+GAP-010,2026-09-10 (late),eBay bulk hide,F-J02,"Adopt (R2, WP-23)"
+GAP-011,2026-09-23,"Q4 low-inventory-level fee alerts (weekly, FNSKU)","F-H11, CALC-043",Adopt (R3)
+GAP-012,2026-09-28,Repricer Was-Price cap; private-label velocity mode,"F-I02, CALC-075",Adopt into CONDITIONAL repricer (R4)
+GAP-013,2026-10-02,"PO ""Ordered"" quantity feeds planner; split POs; closing a PO creates a cost batch and allocates transport cost","F-C11, F-G04, CALC-086, CALC-039",Adopt (R3)
+GAP-014,2026-10-08,Day Parting for SP keywords (general availability),"F-E14, CALC-058, CON-26","v0.2: adopt heatmap read → v0.3: OMITTED (marketing, DC-14)"
+GAP-015,2026-10-08,COGS import by SKU / EAN / UPC,"F-C07, CALC-087, CON-23",Adopt (R1)
+GAP-016,observed 2026-10-10,PPC dashboard Automation status and ROAS columns; Day-Parting heatmap,"F-E01, F-E14","v0.2: adopt (R4) → v0.3: OMITTED (marketing, DC-14)"

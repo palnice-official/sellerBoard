@@ -1,0 +1,641 @@
+screen_id,state,required,evidence_expected
+SCR-001,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-001,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-001,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-001,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-001,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-001,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-001,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-001,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-002,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-002,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-002,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-002,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-002,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-002,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-002,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-002,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-003,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-003,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-003,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-003,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-003,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-003,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-003,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-003,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-010,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-010,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-010,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-010,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-010,source_error,yes,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-010,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-010,concurrent_edit_conflict,yes,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-010,success_toast,yes,Success toast with undo where applicable; audit entry created
+SCR-011,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-011,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-011,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-011,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-011,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-011,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-011,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-011,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-012,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-012,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-012,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-012,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-012,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-012,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-012,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-012,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-013,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-013,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-013,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-013,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-013,source_error,yes,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-013,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-013,concurrent_edit_conflict,yes,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-013,success_toast,yes,Success toast with undo where applicable; audit entry created
+SCR-014,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-014,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-014,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-014,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-014,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-014,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-014,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-014,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-015,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-015,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-015,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-015,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-015,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-015,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-015,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-015,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-016,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-016,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-016,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-016,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-016,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-016,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-016,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-016,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-017,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-017,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-017,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-017,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-017,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-017,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-017,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-017,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-020,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-020,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-020,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-020,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-020,source_error,yes,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-020,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-020,concurrent_edit_conflict,yes,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-020,success_toast,yes,Success toast with undo where applicable; audit entry created
+SCR-021,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-021,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-021,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-021,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-021,source_error,yes,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-021,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-021,concurrent_edit_conflict,yes,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-021,success_toast,yes,Success toast with undo where applicable; audit entry created
+SCR-022,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-022,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-022,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-022,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-022,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-022,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-022,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-022,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-023,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-023,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-023,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-023,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-023,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-023,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-023,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-023,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-024,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-024,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-024,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-024,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-024,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-024,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-024,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-024,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-025,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-025,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-025,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-025,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-025,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-025,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-025,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-025,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-030,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-030,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-030,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-030,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-030,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-030,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-030,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-030,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-031,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-031,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-031,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-031,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-031,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-031,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-031,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-031,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-032,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-032,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-032,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-032,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-032,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-032,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-032,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-032,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-033,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-033,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-033,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-033,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-033,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-033,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-033,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-033,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-034,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-034,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-034,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-034,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-034,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-034,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-034,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-034,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-040,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-040,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-040,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-040,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-040,source_error,yes,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-040,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-040,concurrent_edit_conflict,yes,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-040,success_toast,yes,Success toast with undo where applicable; audit entry created
+SCR-041,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-041,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-041,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-041,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-041,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-041,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-041,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-041,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-042,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-042,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-042,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-042,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-042,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-042,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-042,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-042,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-043,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-043,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-043,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-043,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-043,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-043,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-043,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-043,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-044,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-044,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-044,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-044,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-044,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-044,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-044,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-044,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-045,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-045,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-045,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-045,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-045,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-045,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-045,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-045,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-046,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-046,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-046,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-046,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-046,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-046,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-046,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-046,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-047,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-047,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-047,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-047,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-047,source_error,yes,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-047,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-047,concurrent_edit_conflict,yes,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-047,success_toast,yes,Success toast with undo where applicable; audit entry created
+SCR-050,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-050,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-050,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-050,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-050,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-050,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-050,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-050,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-051,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-051,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-051,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-051,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-051,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-051,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-051,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-051,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-052,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-052,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-052,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-052,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-052,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-052,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-052,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-052,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-060,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-060,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-060,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-060,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-060,source_error,yes,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-060,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-060,concurrent_edit_conflict,yes,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-060,success_toast,yes,Success toast with undo where applicable; audit entry created
+SCR-061,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-061,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-061,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-061,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-061,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-061,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-061,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-061,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-062,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-062,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-062,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-062,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-062,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-062,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-062,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-062,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-063,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-063,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-063,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-063,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-063,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-063,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-063,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-063,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-064,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-064,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-064,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-064,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-064,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-064,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-064,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-064,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-065,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-065,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-065,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-065,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-065,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-065,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-065,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-065,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-070,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-070,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-070,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-070,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-070,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-070,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-070,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-070,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-071,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-071,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-071,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-071,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-071,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-071,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-071,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-071,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-072,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-072,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-072,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-072,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-072,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-072,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-072,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-072,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-073,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-073,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-073,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-073,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-073,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-073,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-073,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-073,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-074,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-074,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-074,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-074,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-074,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-074,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-074,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-074,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-075,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-075,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-075,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-075,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-075,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-075,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-075,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-075,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-076,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-076,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-076,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-076,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-076,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-076,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-076,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-076,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-077,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-077,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-077,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-077,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-077,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-077,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-077,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-077,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-080,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-080,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-080,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-080,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-080,source_error,yes,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-080,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-080,concurrent_edit_conflict,yes,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-080,success_toast,yes,Success toast with undo where applicable; audit entry created
+SCR-081,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-081,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-081,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-081,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-081,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-081,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-081,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-081,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-090,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-090,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-090,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-090,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-090,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-090,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-090,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-090,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-091,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-091,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-091,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-091,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-091,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-091,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-091,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-091,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-100,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-100,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-100,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-100,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-100,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-100,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-100,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-100,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-101,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-101,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-101,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-101,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-101,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-101,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-101,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-101,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-110,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-110,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-110,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-110,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-110,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-110,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-110,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-110,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-111,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-111,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-111,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-111,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-111,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-111,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-111,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-111,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-112,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-112,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-112,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-112,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-112,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-112,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-112,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-112,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-113,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-113,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-113,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-113,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-113,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-113,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-113,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-113,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-114,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-114,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-114,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-114,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-114,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-114,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-114,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-114,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-115,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-115,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-115,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-115,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-115,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-115,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-115,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-115,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-116,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-116,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-116,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-116,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-116,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-116,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-116,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-116,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-117,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-117,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-117,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-117,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-117,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-117,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-117,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-117,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-118,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-118,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-118,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-118,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-118,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-118,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-118,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-118,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-120,default,yes,"Tiles, channel chips (All|Amazon|Shopify|B2B), entity switch, freshness bar and 'More' popover in compat mode render with FIX-UNI-001 values matching GV-139/GV-114; compat and contribution net profit equal"
+SCR-120,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-120,empty,yes,No-B2B-yet empty state with '+ B2B invoice' action; filters and chips stay visible; no zero values presented as data
+SCR-120,stale,yes,Stale banner names the stale source; only that channel's numbers greyed (never zeroed); other channels live
+SCR-120,source_error,yes,Per-channel error banner and 'missing' markers; consolidated totals withheld when FX missing; diagnostics link
+SCR-120,permission_denied,yes,Sales role: Amazon/Shopify chips disabled with reason; viewer: restricted tiles; no cost data in DOM/API
+SCR-120,concurrent_edit_conflict,yes,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-120,success_toast,yes,Success toast with undo where applicable; audit entry created
+SCR-121,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-121,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-121,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-121,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-121,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-121,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-121,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-121,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-122,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-122,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-122,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-122,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-122,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-122,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-122,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-122,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-123,default,yes,"Header, lines, auto HSN, CGST/SGST or IGST by place of supply, totals and read-only IRN/e-way bill flags render with FIX-B2B-001 matching GV-105/106/107"
+SCR-123,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-123,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-123,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-123,source_error,yes,Dedup source (Shopify draft orders / Amazon Business) unavailable: warning that duplicate check is incomplete; posting blocked until check succeeds
+SCR-123,permission_denied,yes,Viewer/ops: 403 panel; maker opening own submitted invoice: Approve disabled with 'maker ≠ checker'
+SCR-123,concurrent_edit_conflict,yes,If-Match conflict dialog on draft autosave showing other user's change; Reload/Overwrite (admin); unsaved lines preserved
+SCR-123,success_toast,yes,"Draft saved / submitted / approved toasts; Post toast has no Undo (immutable, credit note only); audit entry created"
+SCR-124,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-124,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-124,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-124,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-124,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-124,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-124,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-124,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-125,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-125,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-125,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-125,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-125,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-125,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-125,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-125,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-126,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-126,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-126,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-126,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-126,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-126,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-126,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-126,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-127,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-127,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-127,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-127,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-127,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-127,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-127,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-127,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-128,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-128,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-128,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-128,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-128,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-128,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-128,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-128,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-129,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-129,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-129,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-129,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-129,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-129,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-129,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-129,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-130,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-130,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-130,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-130,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-130,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-130,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-130,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-130,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-131,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-131,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-131,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-131,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-131,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-131,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-131,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-131,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-132,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-132,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-132,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-132,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-132,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-132,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-132,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-132,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-133,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-133,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-133,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-133,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-133,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-133,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-133,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-133,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-134,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-134,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-134,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-134,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-134,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-134,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-134,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-134,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-135,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-135,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-135,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-135,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-135,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-135,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-135,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-135,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-136,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-136,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-136,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-136,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-136,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-136,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-136,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-136,success_toast,if-applicable,Success toast with undo where applicable; audit entry created
+SCR-137,default,yes,All listed columns/controls render with synthetic fixture values matching golden vectors
+SCR-137,loading,yes,"Skeleton/spinner visible, controls disabled, no partial numbers rendered"
+SCR-137,empty,yes,Empty-state copy with next action; no zero values presented as data
+SCR-137,stale,yes,"Stale banner with last-sync time (>24h); values greyed, not zeroed"
+SCR-137,source_error,if-applicable,Connector error banner naming source; 'missing' markers; diagnostics link
+SCR-137,permission_denied,yes,403 panel with role explanation and request-access link; no data leakage in DOM
+SCR-137,concurrent_edit_conflict,if-applicable,"Conflict dialog showing other user's change, Reload/Overwrite options"
+SCR-137,success_toast,if-applicable,Success toast with undo where applicable; audit entry created

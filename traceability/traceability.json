@@ -1,0 +1,5043 @@
+{
+ "cutoff": "2026-10-10",
+ "generated": "2026-10-10T13:47:18.006794Z",
+ "links": [
+  {
+   "requirement": "REQ-001",
+   "feature": "F-A01",
+   "sources": [
+    "S17",
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-001"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-A-001",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-03",
+   "owner_role": "Backend lead",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-A-001 for SCR-001, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-001), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-002",
+   "feature": "F-A02",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-002"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-A-002",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-04",
+   "owner_role": "Backend",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-A-002 for SCR-002, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-002), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-003",
+   "feature": "F-A03",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-115",
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-A-003",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-04",
+   "owner_role": "Backend",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-A-003 for SCR-115,SCR-101, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-115,SCR-101), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-004",
+   "feature": "F-A04",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-A-004",
+   "calculations": [
+    "CALC-026"
+   ],
+   "fixtures": [
+    "GV-033"
+   ],
+   "work_package": "WP-04",
+   "owner_role": "Backend",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-A-004 for SCR-101, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-033 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-005",
+   "feature": "F-A05",
+   "sources": [
+    "OBS",
+    "S11"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-003"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-A-005",
+   "calculations": [
+    "CALC-013",
+    "CALC-051",
+    "CALC-101"
+   ],
+   "fixtures": [
+    "GV-015",
+    "GV-046",
+    "GV-074",
+    "GV-114",
+    "GV-139"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-A-005 for SCR-003, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-015, GV-046, GV-074, GV-114, GV-139 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-006",
+   "feature": "F-A06",
+   "sources": [
+    "S03",
+    "PROP"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-115"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-A-006",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-03",
+   "owner_role": "Backend lead",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-A-006 for SCR-115, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-115), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-007",
+   "feature": "F-A07",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-002"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-A-007",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-03",
+   "owner_role": "Backend lead",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-A-007 for SCR-002, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-002), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-008",
+   "feature": "F-A08",
+   "sources": [
+    "OBS",
+    "S24"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-A-008",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-06",
+   "owner_role": "Backend",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-A-008 for SCR-101, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-101), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-009",
+   "feature": "F-A09",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-010"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-A-009",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-A-009 for SCR-010, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-010), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-010",
+   "feature": "F-B01",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-010",
+    "SCR-016"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-B-010",
+   "calculations": [
+    "CALC-002",
+    "CALC-013",
+    "CALC-045",
+    "CALC-108"
+   ],
+   "fixtures": [
+    "GV-002",
+    "GV-003",
+    "GV-015",
+    "GV-030",
+    "GV-045",
+    "GV-046",
+    "GV-146"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-010 for SCR-010,SCR-016, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-002, GV-003, GV-015, GV-030, GV-045, GV-046, GV-146 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-011",
+   "feature": "F-B02",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-011"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-011",
+   "calculations": [
+    "CALC-001",
+    "CALC-003",
+    "CALC-010",
+    "CALC-012",
+    "CALC-015",
+    "CALC-019",
+    "CALC-050",
+    "CALC-051",
+    "CALC-052"
+   ],
+   "fixtures": [
+    "GV-001",
+    "GV-004",
+    "GV-011",
+    "GV-014",
+    "GV-053",
+    "GV-054",
+    "GV-058",
+    "GV-067",
+    "GV-068",
+    "GV-073",
+    "GV-074",
+    "GV-075",
+    "GV-076",
+    "GV-143"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-011 for SCR-011, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-001, GV-004, GV-011, GV-014, GV-053, GV-054, GV-058, GV-067, GV-068, GV-073, GV-074, GV-075, GV-076, GV-143 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-012",
+   "feature": "F-B03",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-012"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-012",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-012 for SCR-012, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-012), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-013",
+   "feature": "F-B04",
+   "sources": [
+    "OBS",
+    "S13",
+    "S18"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-013"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-013",
+   "calculations": [
+    "CALC-013",
+    "CALC-050",
+    "CALC-051",
+    "CALC-108"
+   ],
+   "fixtures": [
+    "GV-015",
+    "GV-046",
+    "GV-073",
+    "GV-074",
+    "GV-075",
+    "GV-146"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-013 for SCR-013, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-015, GV-046, GV-073, GV-074, GV-075, GV-146 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-014",
+   "feature": "F-B05",
+   "sources": [
+    "OBS",
+    "S12"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-015"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-014",
+   "calculations": [
+    "CALC-030",
+    "CALC-031",
+    "CALC-108"
+   ],
+   "fixtures": [
+    "GV-047",
+    "GV-048",
+    "GV-141",
+    "GV-146"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-014 for SCR-015, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-047, GV-048, GV-141, GV-146 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-015",
+   "feature": "F-B06",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-014"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-015",
+   "calculations": [
+    "CALC-111"
+   ],
+   "fixtures": [
+    "GV-149"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-B-015 for SCR-014, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-149 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-016",
+   "feature": "F-B07",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-010",
+    "SCR-017"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-016",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-016 for SCR-010,SCR-017, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-010,SCR-017), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-017",
+   "feature": "F-B08",
+   "sources": [
+    "S18"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-016"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-017",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-017 for SCR-016, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-016), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-018",
+   "feature": "F-B09",
+   "sources": [
+    "OBS",
+    "S14"
+   ],
+   "evidence": "OBS+PROP",
+   "screens": [
+    "SCR-010"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-018",
+   "calculations": [
+    "CALC-014",
+    "CALC-016",
+    "CALC-017",
+    "CALC-018",
+    "CALC-048",
+    "CALC-053",
+    "CALC-054"
+   ],
+   "fixtures": [
+    "GV-017",
+    "GV-019",
+    "GV-055",
+    "GV-056",
+    "GV-057",
+    "GV-064",
+    "GV-077",
+    "GV-078",
+    "GV-135"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-018 for SCR-010, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-017, GV-019, GV-055, GV-056, GV-057, GV-064, GV-077, GV-078, GV-135 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-019",
+   "feature": "F-B10",
+   "sources": [
+    "S01",
+    "S03",
+    "S09"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-090"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-019",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-B-019 for SCR-090, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-090), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-020",
+   "feature": "F-B11",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-010"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-020",
+   "calculations": [
+    "CALC-026",
+    "CALC-081"
+   ],
+   "fixtures": [
+    "GV-033",
+    "GV-121"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-B-020 for SCR-010, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-033, GV-121 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-021",
+   "feature": "F-C01",
+   "sources": [
+    "OBS",
+    "S01",
+    "S13"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-021"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-021",
+   "calculations": [
+    "CALC-005",
+    "CALC-006",
+    "CALC-007",
+    "CALC-078"
+   ],
+   "fixtures": [
+    "GV-006",
+    "GV-007",
+    "GV-008",
+    "GV-009",
+    "GV-010",
+    "GV-018",
+    "GV-069",
+    "GV-072",
+    "GV-102"
+   ],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-021 for SCR-021, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-006, GV-007, GV-008, GV-009, GV-010, GV-018, GV-069, GV-072, GV-102 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-022",
+   "feature": "F-C02",
+   "sources": [
+    "OBS",
+    "S13",
+    "S18"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-021",
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-022",
+   "calculations": [
+    "CALC-007"
+   ],
+   "fixtures": [
+    "GV-008",
+    "GV-009",
+    "GV-010",
+    "GV-072"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-022 for SCR-021,SCR-101, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-008, GV-009, GV-010, GV-072 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-023",
+   "feature": "F-C03",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-022"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-023",
+   "calculations": [
+    "CALC-008"
+   ],
+   "fixtures": [
+    "GV-012",
+    "GV-013"
+   ],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-023 for SCR-022, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-012, GV-013 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-024",
+   "feature": "F-C04",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-020",
+    "SCR-021"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-024",
+   "calculations": [
+    "CALC-066",
+    "CALC-087"
+   ],
+   "fixtures": [
+    "GV-089",
+    "GV-127"
+   ],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-024 for SCR-020,SCR-021, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-089, GV-127 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-025",
+   "feature": "F-C05",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-024"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-025",
+   "calculations": [
+    "CALC-005"
+   ],
+   "fixtures": [
+    "GV-006",
+    "GV-018",
+    "GV-069"
+   ],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-C-025 for SCR-024, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-006, GV-018, GV-069 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-026",
+   "feature": "F-C06",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-023"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-026",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-026 for SCR-023, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-023), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-027",
+   "feature": "F-C07",
+   "sources": [
+    "S12"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-025"
+   ],
+   "connectors": [
+    "CON-23"
+   ],
+   "fixture_screen": "FIX-C-027",
+   "calculations": [
+    "CALC-087"
+   ],
+   "fixtures": [
+    "GV-127"
+   ],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-027 for SCR-025, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-127 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-028",
+   "feature": "F-C08",
+   "sources": [
+    "S18"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-076"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-028",
+   "calculations": [
+    "CALC-043"
+   ],
+   "fixtures": [
+    "GV-044"
+   ],
+   "work_package": "WP-34",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-028 for SCR-076, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-044 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-029",
+   "feature": "F-C09",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-021"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-029",
+   "calculations": [
+    "CALC-024"
+   ],
+   "fixtures": [
+    "GV-025",
+    "GV-026"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-029 for SCR-021, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-025, GV-026 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-030",
+   "feature": "F-D01",
+   "sources": [
+    "OBS",
+    "S03"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-032",
+    "SCR-011"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-D-030",
+   "calculations": [
+    "CALC-003",
+    "CALC-067",
+    "CALC-109"
+   ],
+   "fixtures": [
+    "GV-004",
+    "GV-011",
+    "GV-091",
+    "GV-147"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-030 for SCR-032,SCR-011, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-004, GV-011, GV-091, GV-147 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-031",
+   "feature": "F-D02",
+   "sources": [
+    "OBS",
+    "S17"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-034"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-031",
+   "calculations": [
+    "CALC-004",
+    "CALC-009",
+    "CALC-053",
+    "CALC-054",
+    "CALC-082"
+   ],
+   "fixtures": [
+    "GV-005",
+    "GV-016",
+    "GV-077",
+    "GV-078",
+    "GV-122",
+    "GV-138"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-031 for SCR-034, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-005, GV-016, GV-077, GV-078, GV-122, GV-138 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-032",
+   "feature": "F-D03",
+   "sources": [
+    "S01",
+    "S49"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-033"
+   ],
+   "connectors": [
+    "CON-32"
+   ],
+   "fixture_screen": "FIX-D-032",
+   "calculations": [
+    "CALC-020"
+   ],
+   "fixtures": [
+    "GV-022",
+    "GV-023",
+    "GV-137"
+   ],
+   "work_package": "WP-13",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-032 for SCR-033, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-022, GV-023, GV-137 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-033",
+   "feature": "F-D04",
+   "sources": [
+    "OBS",
+    "S01",
+    "S14"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-033",
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-033",
+   "calculations": [
+    "CALC-020"
+   ],
+   "fixtures": [
+    "GV-022",
+    "GV-023",
+    "GV-137"
+   ],
+   "work_package": "WP-13",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-033 for SCR-033,SCR-101, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-022, GV-023, GV-137 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-034",
+   "feature": "F-D05",
+   "sources": [
+    "OBS",
+    "S01"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-033",
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-034",
+   "calculations": [
+    "CALC-021"
+   ],
+   "fixtures": [
+    "GV-024"
+   ],
+   "work_package": "WP-13",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-034 for SCR-033,SCR-101, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-024 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-035",
+   "feature": "F-D06",
+   "sources": [
+    "S01"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-033"
+   ],
+   "connectors": [
+    "CON-06"
+   ],
+   "fixture_screen": "FIX-D-035",
+   "calculations": [
+    "CALC-022"
+   ],
+   "fixtures": [
+    "GV-020",
+    "GV-021",
+    "GV-136"
+   ],
+   "work_package": "WP-13",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-035 for SCR-033, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-020, GV-021, GV-136 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-036",
+   "feature": "F-D07",
+   "sources": [
+    "OBS",
+    "S16"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-030"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-036",
+   "calculations": [
+    "CALC-024"
+   ],
+   "fixtures": [
+    "GV-025",
+    "GV-026"
+   ],
+   "work_package": "WP-10",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-036 for SCR-030, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-025, GV-026 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-037",
+   "feature": "F-D08",
+   "sources": [
+    "OBS",
+    "S16"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-031"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-037",
+   "calculations": [
+    "CALC-011",
+    "CALC-091"
+   ],
+   "fixtures": [
+    "GV-066",
+    "GV-131"
+   ],
+   "work_package": "WP-10",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-037 for SCR-031, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-066, GV-131 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-038",
+   "feature": "F-D09",
+   "sources": [
+    "OBS",
+    "S15"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-038",
+   "calculations": [
+    "CALC-024"
+   ],
+   "fixtures": [
+    "GV-025",
+    "GV-026"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-038 for SCR-101, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-025, GV-026 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-039",
+   "feature": "F-D10",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-030"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-039",
+   "calculations": [
+    "CALC-023"
+   ],
+   "fixtures": [
+    "GV-027"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-039 for SCR-030, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-027 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-040",
+   "feature": "F-D11",
+   "sources": [
+    "OBS",
+    "S18"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-040",
+   "calculations": [
+    "CALC-025"
+   ],
+   "fixtures": [
+    "GV-028",
+    "GV-029",
+    "GV-145"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-040 for SCR-101, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-028, GV-029, GV-145 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-041",
+   "feature": "F-E01",
+   "sources": [
+    "OBS",
+    "S04"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-040"
+   ],
+   "connectors": [
+    "CON-02"
+   ],
+   "fixture_screen": "FIX-E-041",
+   "calculations": [
+    "CALC-028",
+    "CALC-029"
+   ],
+   "fixtures": [
+    "GV-059",
+    "GV-060"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-E-041 for SCR-040, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-059, GV-060 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-042",
+   "feature": "F-E02",
+   "sources": [
+    "OBS",
+    "S12"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-015"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-E-042",
+   "calculations": [
+    "CALC-030",
+    "CALC-031"
+   ],
+   "fixtures": [
+    "GV-047",
+    "GV-048",
+    "GV-141"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-E-042 for SCR-015, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-047, GV-048, GV-141 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-043",
+   "feature": "F-E03",
+   "sources": [
+    "OBS",
+    "S04"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-041"
+   ],
+   "connectors": [
+    "CON-26"
+   ],
+   "fixture_screen": "FIX-E-043",
+   "calculations": [
+    "CALC-088",
+    "CALC-112"
+   ],
+   "fixtures": [
+    "GV-128",
+    "GV-150"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-E-043 for SCR-041, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-128, GV-150 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-044",
+   "feature": "F-E04",
+   "sources": [
+    "OBS",
+    "S04"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-047",
+    "SCR-042"
+   ],
+   "connectors": [
+    "CON-26"
+   ],
+   "fixture_screen": "FIX-E-044",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-E-044 for SCR-047,SCR-042, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-047,SCR-042), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-045",
+   "feature": "F-E05",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-042"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-E-045",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-20",
+   "owner_role": "Backend",
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-E-045 for SCR-042, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-042), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-046",
+   "feature": "F-E06",
+   "sources": [
+    "S01",
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-043"
+   ],
+   "connectors": [
+    "CON-08..CON-14"
+   ],
+   "fixture_screen": "FIX-E-046",
+   "calculations": [
+    "CALC-032"
+   ],
+   "fixtures": [
+    "GV-049"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-E-046 for SCR-043, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-049 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-047",
+   "feature": "F-E07",
+   "sources": [
+    "S12"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-044"
+   ],
+   "connectors": [
+    "CON-04"
+   ],
+   "fixture_screen": "FIX-E-047",
+   "calculations": [
+    "CALC-032"
+   ],
+   "fixtures": [
+    "GV-049"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-E-047 for SCR-044, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-049 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-048",
+   "feature": "F-E08",
+   "sources": [
+    "S05",
+    "S16"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-045"
+   ],
+   "connectors": [
+    "CON-03"
+   ],
+   "fixture_screen": "FIX-E-048",
+   "calculations": [
+    "CALC-074"
+   ],
+   "fixtures": [
+    "GV-099"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-E-048 for SCR-045, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-099 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-049",
+   "feature": "F-E09",
+   "sources": [
+    "OBS",
+    "S06"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-046"
+   ],
+   "connectors": [
+    "CON-03"
+   ],
+   "fixture_screen": "FIX-E-049",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-E-049 for SCR-046, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-046), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-050",
+   "feature": "F-E10",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-040"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-E-050",
+   "calculations": [
+    "CALC-031",
+    "CALC-049"
+   ],
+   "fixtures": [
+    "GV-047",
+    "GV-070"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-E-050 for SCR-040, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-047, GV-070 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-051",
+   "feature": "F-E11",
+   "sources": [
+    "S01",
+    "S20"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-043"
+   ],
+   "connectors": [
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-E-051",
+   "calculations": [
+    "CALC-032"
+   ],
+   "fixtures": [
+    "GV-049"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-E-051 for SCR-043, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-049 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-052",
+   "feature": "F-F01",
+   "sources": [
+    "OBS",
+    "S01"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-050"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-F-052",
+   "calculations": [
+    "CALC-033"
+   ],
+   "fixtures": [
+    "GV-035",
+    "GV-036"
+   ],
+   "work_package": "WP-14",
+   "owner_role": "Data eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-F-052 for SCR-050, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-035, GV-036 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-053",
+   "feature": "F-F02",
+   "sources": [
+    "S01",
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-051"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-F-053",
+   "calculations": [
+    "CALC-034",
+    "CALC-035",
+    "CALC-036"
+   ],
+   "fixtures": [
+    "GV-037",
+    "GV-061",
+    "GV-062",
+    "GV-065",
+    "GV-071"
+   ],
+   "work_package": "WP-14",
+   "owner_role": "Data eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-F-053 for SCR-051, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-037, GV-061, GV-062, GV-065, GV-071 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-054",
+   "feature": "F-F03",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-052"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-F-054",
+   "calculations": [
+    "CALC-035",
+    "CALC-083"
+   ],
+   "fixtures": [
+    "GV-037",
+    "GV-123"
+   ],
+   "work_package": "WP-11",
+   "owner_role": "Backend",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-F-054 for SCR-052, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-037, GV-123 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-055",
+   "feature": "F-F04",
+   "sources": [
+    "OBS",
+    "S20"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-051"
+   ],
+   "connectors": [
+    "CON-29"
+   ],
+   "fixture_screen": "FIX-F-055",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-14",
+   "owner_role": "Data eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-F-055 for SCR-051, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-051), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-056",
+   "feature": "F-G01",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-060"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-G-056",
+   "calculations": [
+    "CALC-040"
+   ],
+   "fixtures": [
+    "GV-052"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-056 for SCR-060, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-052 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-057",
+   "feature": "F-G02",
+   "sources": [
+    "OBS",
+    "S13"
+   ],
+   "evidence": "OBS+PROP",
+   "screens": [
+    "SCR-060"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-G-057",
+   "calculations": [
+    "CALC-037",
+    "CALC-038"
+   ],
+   "fixtures": [
+    "GV-039",
+    "GV-063",
+    "GV-133"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-057 for SCR-060, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-039, GV-063, GV-133 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-058",
+   "feature": "F-G03",
+   "sources": [
+    "OBS",
+    "S13"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-060"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-G-058",
+   "calculations": [
+    "CALC-039"
+   ],
+   "fixtures": [
+    "GV-038",
+    "GV-134"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-058 for SCR-060, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-038, GV-134 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-059",
+   "feature": "F-G04",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS+PROP",
+   "screens": [
+    "SCR-061",
+    "SCR-062"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-G-059",
+   "calculations": [
+    "CALC-039"
+   ],
+   "fixtures": [
+    "GV-038",
+    "GV-134"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-059 for SCR-061,SCR-062, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-038, GV-134 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-060",
+   "feature": "F-G05",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-063"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-G-060",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-060 for SCR-063, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-063), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-061",
+   "feature": "F-G06",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-G-061",
+   "calculations": [
+    "CALC-040"
+   ],
+   "fixtures": [
+    "GV-052"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-061 for SCR-101, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-052 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-062",
+   "feature": "F-G07",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS+PROP",
+   "screens": [
+    "SCR-064"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-G-062",
+   "calculations": [
+    "CALC-040"
+   ],
+   "fixtures": [
+    "GV-052"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-062 for SCR-064, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-052 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-063",
+   "feature": "F-G08",
+   "sources": [
+    "S08"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-065"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-G-063",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-24",
+   "owner_role": "Frontend",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-G-063 for SCR-065, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-065), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-064",
+   "feature": "F-H01",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-070"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-H-064",
+   "calculations": [
+    "CALC-044"
+   ],
+   "fixtures": [
+    "GV-050"
+   ],
+   "work_package": "WP-16",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-H-064 for SCR-070, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-050 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-065",
+   "feature": "F-H02",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-071"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-H-065",
+   "calculations": [
+    "CALC-044"
+   ],
+   "fixtures": [
+    "GV-050"
+   ],
+   "work_package": "WP-16",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-H-065 for SCR-071, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-050 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-066",
+   "feature": "F-H03",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-072"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-H-066",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-16",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-H-066 for SCR-072, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-072), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-067",
+   "feature": "F-H04",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-073"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-H-067",
+   "calculations": [
+    "CALC-044"
+   ],
+   "fixtures": [
+    "GV-050"
+   ],
+   "work_package": "WP-16",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-H-067 for SCR-073, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-050 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-068",
+   "feature": "F-H05",
+   "sources": [
+    "OBS",
+    "S07",
+    "S31"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-074",
+    "SCR-075"
+   ],
+   "connectors": [
+    "CON-24"
+   ],
+   "fixture_screen": "FIX-H-068",
+   "calculations": [
+    "CALC-042"
+   ],
+   "fixtures": [
+    "GV-042",
+    "GV-043"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-H-068 for SCR-074,SCR-075, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-042, GV-043 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-069",
+   "feature": "F-H06",
+   "sources": [
+    "OBS",
+    "S03"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-076",
+    "SCR-077"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-H-069",
+   "calculations": [
+    "CALC-043"
+   ],
+   "fixtures": [
+    "GV-044"
+   ],
+   "work_package": "WP-17",
+   "owner_role": "Backend",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-H-069 for SCR-076,SCR-077, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-044 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-070",
+   "feature": "F-H07",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-077"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-H-070",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-17",
+   "owner_role": "Backend",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-H-070 for SCR-077, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-077), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-071",
+   "feature": "F-I01",
+   "sources": [
+    "S10"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-080"
+   ],
+   "connectors": [
+    "CON-25"
+   ],
+   "fixture_screen": "FIX-I-071",
+   "calculations": [
+    "CALC-041"
+   ],
+   "fixtures": [
+    "GV-040",
+    "GV-041"
+   ],
+   "work_package": "WP-22",
+   "owner_role": "Full-stack",
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-I-071 for SCR-080, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-040, GV-041 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-072",
+   "feature": "F-I02",
+   "sources": [
+    "S10",
+    "PROP"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-080",
+    "SCR-047"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-I-072",
+   "calculations": [
+    "CALC-041",
+    "CALC-075"
+   ],
+   "fixtures": [
+    "GV-040",
+    "GV-041",
+    "GV-100"
+   ],
+   "work_package": "WP-20",
+   "owner_role": "Backend",
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-I-072 for SCR-080,SCR-047, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-040, GV-041, GV-100 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-073",
+   "feature": "F-I03",
+   "sources": [
+    "S10"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-081"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-I-073",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-22",
+   "owner_role": "Full-stack",
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-I-073 for SCR-081, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-081), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-074",
+   "feature": "F-J01",
+   "sources": [
+    "S09",
+    "S11",
+    "S14"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-090"
+   ],
+   "connectors": [
+    "CON-16"
+   ],
+   "fixture_screen": "FIX-J-074",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-J-074 for SCR-090, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-090), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-075",
+   "feature": "F-J02",
+   "sources": [
+    "OBS",
+    "S11",
+    "S18"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-090"
+   ],
+   "connectors": [
+    "CON-17"
+   ],
+   "fixture_screen": "FIX-J-075",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-J-075 for SCR-090, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-090), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-076",
+   "feature": "F-J03",
+   "sources": [
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-090"
+   ],
+   "connectors": [
+    "CON-18"
+   ],
+   "fixture_screen": "FIX-J-076",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-J-076 for SCR-090, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-090), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-077",
+   "feature": "F-J04",
+   "sources": [
+    "OBS",
+    "S11"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-091",
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-J-077",
+   "calculations": [
+    "CALC-047"
+   ],
+   "fixtures": [
+    "GV-031",
+    "GV-032",
+    "GV-140"
+   ],
+   "work_package": "WP-13",
+   "owner_role": "Financial/data eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-J-077 for SCR-091,SCR-101, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-031, GV-032, GV-140 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-078",
+   "feature": "F-J05",
+   "sources": [
+    "S19",
+    "OBS"
+   ],
+   "evidence": "HIST",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-J-078",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-J-078 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-079",
+   "feature": "F-B12",
+   "sources": [
+    "OBS",
+    "S41"
+   ],
+   "evidence": "OBS+PROP",
+   "screens": [
+    "SCR-120",
+    "SCR-010"
+   ],
+   "connectors": [
+    "CON-01",
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-B-079",
+   "calculations": [
+    "CALC-101",
+    "CALC-050",
+    "CALC-051"
+   ],
+   "fixtures": [
+    "GV-073",
+    "GV-074",
+    "GV-075",
+    "GV-114",
+    "GV-139"
+   ],
+   "work_package": "WP-32",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-079 for SCR-120,SCR-010, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-073, GV-074, GV-075, GV-114, GV-139 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-080",
+   "feature": "F-B13",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS-R",
+   "screens": [
+    "SCR-011",
+    "SCR-013"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-080",
+   "calculations": [
+    "CALC-050",
+    "CALC-051",
+    "CALC-052"
+   ],
+   "fixtures": [
+    "GV-073",
+    "GV-074",
+    "GV-075",
+    "GV-076"
+   ],
+   "work_package": "WP-34",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-080 for SCR-011,SCR-013, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-073, GV-074, GV-075, GV-076 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-081",
+   "feature": "F-B14",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-129",
+    "SCR-130"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-081",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-34",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-081 for SCR-129,SCR-130, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-129,SCR-130), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-082",
+   "feature": "F-B15",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-131"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-082",
+   "calculations": [
+    "CALC-107"
+   ],
+   "fixtures": [
+    "GV-120"
+   ],
+   "work_package": "WP-36",
+   "owner_role": "Financial/data eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-B-082 for SCR-131, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-120 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-083",
+   "feature": "F-B16",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-114"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-083",
+   "calculations": [
+    "CALC-051"
+   ],
+   "fixtures": [
+    "GV-074"
+   ],
+   "work_package": "WP-34",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-083 for SCR-114, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-074 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-084",
+   "feature": "F-B17",
+   "sources": [
+    "OBS",
+    "help"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-010"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-B-084",
+   "calculations": [
+    "CALC-072",
+    "CALC-085"
+   ],
+   "fixtures": [
+    "GV-097",
+    "GV-125"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-084 for SCR-010, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-097, GV-125 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-085",
+   "feature": "F-C10",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-021",
+    "SCR-020"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-085",
+   "calculations": [
+    "CALC-078",
+    "CALC-087"
+   ],
+   "fixtures": [
+    "GV-102",
+    "GV-127"
+   ],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-085 for SCR-021,SCR-020, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-102, GV-127 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-086",
+   "feature": "F-C11",
+   "sources": [
+    "blog 2026-10-02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-061"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-086",
+   "calculations": [
+    "CALC-086"
+   ],
+   "fixtures": [
+    "GV-126"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-C-086 for SCR-061, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-126 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-087",
+   "feature": "F-C12",
+   "sources": [
+    "help"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-021"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-087",
+   "calculations": [
+    "CALC-080"
+   ],
+   "fixtures": [
+    "GV-104"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-C-087 for SCR-021, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-104 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-088",
+   "feature": "F-D12",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS-R",
+   "screens": [
+    "SCR-011",
+    "SCR-120"
+   ],
+   "connectors": [
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-D-088",
+   "calculations": [
+    "CALC-076",
+    "CALC-052"
+   ],
+   "fixtures": [
+    "GV-076",
+    "GV-090"
+   ],
+   "work_package": "WP-13",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-088 for SCR-011,SCR-120, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-076, GV-090 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-089",
+   "feature": "F-D13",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-135"
+   ],
+   "connectors": [
+    "CON-05",
+    "CON-06"
+   ],
+   "fixture_screen": "FIX-D-089",
+   "calculations": [
+    "CALC-022"
+   ],
+   "fixtures": [
+    "GV-020",
+    "GV-021",
+    "GV-136"
+   ],
+   "work_package": "WP-35",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-089 for SCR-135, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-020, GV-021, GV-136 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-090",
+   "feature": "F-D14",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-033"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-090",
+   "calculations": [
+    "CALC-077"
+   ],
+   "fixtures": [
+    "GV-101"
+   ],
+   "work_package": "WP-35",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-090 for SCR-033, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-101 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-091",
+   "feature": "F-D15",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS+PROP",
+   "screens": [
+    "SCR-136"
+   ],
+   "connectors": [
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-D-091",
+   "calculations": [
+    "CALC-090",
+    "CALC-104"
+   ],
+   "fixtures": [
+    "GV-118",
+    "GV-130"
+   ],
+   "work_package": "WP-35",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-091 for SCR-136, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-118, GV-130 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-092",
+   "feature": "F-D16",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-033",
+    "SCR-136"
+   ],
+   "connectors": [
+    "CON-32"
+   ],
+   "fixture_screen": "FIX-D-092",
+   "calculations": [
+    "CALC-105"
+   ],
+   "fixtures": [
+    "GV-117"
+   ],
+   "work_package": "WP-35",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-092 for SCR-033,SCR-136, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-117 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-093",
+   "feature": "F-D17",
+   "sources": [
+    "OBS",
+    "help"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-011"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-093",
+   "calculations": [
+    "CALC-079"
+   ],
+   "fixtures": [
+    "GV-103",
+    "GV-155"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-093 for SCR-011, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-103, GV-155 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-094",
+   "feature": "F-D18",
+   "sources": [
+    "help"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-032"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-D-094",
+   "calculations": [
+    "CALC-067"
+   ],
+   "fixtures": [
+    "GV-091"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-094 for SCR-032, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-091 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-095",
+   "feature": "F-E12",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS-R",
+   "screens": [
+    "SCR-133",
+    "SCR-134"
+   ],
+   "connectors": [
+    "CON-05",
+    "CON-08",
+    "CON-09"
+   ],
+   "fixture_screen": "FIX-E-095",
+   "calculations": [
+    "CALC-061",
+    "CALC-056"
+   ],
+   "fixtures": [
+    "GV-080",
+    "GV-093",
+    "GV-151"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-E-095 for SCR-133,SCR-134, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-080, GV-093, GV-151 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-096",
+   "feature": "F-E13",
+   "sources": [
+    "OBS",
+    "help"
+   ],
+   "evidence": "OBS-R",
+   "screens": [
+    "SCR-040"
+   ],
+   "connectors": [
+    "CON-02"
+   ],
+   "fixture_screen": "FIX-E-096",
+   "calculations": [
+    "CALC-055",
+    "CALC-056",
+    "CALC-057",
+    "CALC-049"
+   ],
+   "fixtures": [
+    "GV-070",
+    "GV-079",
+    "GV-080",
+    "GV-081"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-E-096 for SCR-040, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-070, GV-079, GV-080, GV-081 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-097",
+   "feature": "F-E14",
+   "sources": [
+    "blog 2026-10-08",
+    "OBS"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-041",
+    "SCR-047"
+   ],
+   "connectors": [
+    "CON-26"
+   ],
+   "fixture_screen": "FIX-E-097",
+   "calculations": [
+    "CALC-058"
+   ],
+   "fixtures": [
+    "GV-082"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-E-097 for SCR-041,SCR-047, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-082 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-098",
+   "feature": "F-E15",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS-R",
+   "screens": [
+    "SCR-120",
+    "SCR-010"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-E-098",
+   "calculations": [
+    "CALC-059"
+   ],
+   "fixtures": [
+    "GV-083"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-E-098 for SCR-120,SCR-010, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-083 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-099",
+   "feature": "F-E16",
+   "sources": [
+    "blog 2026-09-10"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-044"
+   ],
+   "connectors": [
+    "CON-04"
+   ],
+   "fixture_screen": "FIX-E-099",
+   "calculations": [
+    "CALC-060"
+   ],
+   "fixtures": [
+    "GV-084"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-E-099 for SCR-044, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-084 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-100",
+   "feature": "F-F05",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-050"
+   ],
+   "connectors": [
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-F-100",
+   "calculations": [
+    "CALC-084"
+   ],
+   "fixtures": [
+    "GV-124"
+   ],
+   "work_package": "WP-14",
+   "owner_role": "Data eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-F-100 for SCR-050, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-124 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-101",
+   "feature": "F-F06",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-132"
+   ],
+   "connectors": [
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-F-101",
+   "calculations": [
+    "CALC-106"
+   ],
+   "fixtures": [
+    "GV-119"
+   ],
+   "work_package": "WP-14",
+   "owner_role": "Data eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-F-101 for SCR-132, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-119 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-102",
+   "feature": "F-G09",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS-R",
+   "screens": [
+    "SCR-060",
+    "SCR-137"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-G-102",
+   "calculations": [
+    "CALC-037",
+    "CALC-038",
+    "CALC-039",
+    "CALC-062",
+    "CALC-063",
+    "CALC-064",
+    "CALC-065",
+    "CALC-089"
+   ],
+   "fixtures": [
+    "GV-038",
+    "GV-039",
+    "GV-063",
+    "GV-085",
+    "GV-086",
+    "GV-087",
+    "GV-088",
+    "GV-129",
+    "GV-133",
+    "GV-134",
+    "GV-142"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-102 for SCR-060,SCR-137, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-038, GV-039, GV-063, GV-085, GV-086, GV-087, GV-088, GV-129, GV-133, GV-134, GV-142 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-103",
+   "feature": "F-G10",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-060"
+   ],
+   "connectors": [
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-G-103",
+   "calculations": [
+    "CALC-092"
+   ],
+   "fixtures": [
+    "GV-132"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-103 for SCR-060, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-132 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-104",
+   "feature": "F-H10",
+   "sources": [
+    "help"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-070",
+    "SCR-071",
+    "SCR-072"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-H-104",
+   "calculations": [
+    "CALC-068",
+    "CALC-069",
+    "CALC-070",
+    "CALC-071"
+   ],
+   "fixtures": [
+    "GV-092",
+    "GV-094",
+    "GV-095",
+    "GV-096"
+   ],
+   "work_package": "WP-16",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-H-104 for SCR-070,SCR-071,SCR-072, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-092, GV-094, GV-095, GV-096 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-105",
+   "feature": "F-H11",
+   "sources": [
+    "blog 2026-09-23"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-076"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-H-105",
+   "calculations": [
+    "CALC-043"
+   ],
+   "fixtures": [
+    "GV-044"
+   ],
+   "work_package": "WP-17",
+   "owner_role": "Backend",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-H-105 for SCR-076, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-044 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-106",
+   "feature": "F-M01",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-122"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-106",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-M-106 for SCR-122, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-122), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-107",
+   "feature": "F-M02",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-123"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-107",
+   "calculations": [
+    "CALC-093",
+    "CALC-094",
+    "CALC-095",
+    "CALC-096"
+   ],
+   "fixtures": [
+    "GV-105",
+    "GV-106",
+    "GV-107",
+    "GV-108",
+    "GV-109"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-M-107 for SCR-123, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-105, GV-106, GV-107, GV-108, GV-109 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-108",
+   "feature": "F-M03",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-124"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-108",
+   "calculations": [
+    "CALC-095",
+    "CALC-097"
+   ],
+   "fixtures": [
+    "GV-108",
+    "GV-110"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-M-108 for SCR-124, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-108, GV-110 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-109",
+   "feature": "F-M04",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-126"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-109",
+   "calculations": [
+    "CALC-100"
+   ],
+   "fixtures": [
+    "GV-113"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-M-109 for SCR-126, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-113 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-110",
+   "feature": "F-M05",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-125"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-110",
+   "calculations": [
+    "CALC-098"
+   ],
+   "fixtures": [
+    "GV-111"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-M-110 for SCR-125, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-111 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-111",
+   "feature": "F-M06",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-123"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-111",
+   "calculations": [
+    "CALC-099",
+    "CALC-026"
+   ],
+   "fixtures": [
+    "GV-033",
+    "GV-112"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-M-111 for SCR-123, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-033, GV-112 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-112",
+   "feature": "F-M07",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-120",
+    "SCR-121",
+    "SCR-127"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-112",
+   "calculations": [
+    "CALC-097",
+    "CALC-100",
+    "CALC-101",
+    "CALC-110"
+   ],
+   "fixtures": [
+    "GV-110",
+    "GV-113",
+    "GV-114",
+    "GV-139",
+    "GV-148"
+   ],
+   "work_package": "WP-32",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-M-112 for SCR-120,SCR-121,SCR-127, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-110, GV-113, GV-114, GV-139, GV-148 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-113",
+   "feature": "F-M08",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-128"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-113",
+   "calculations": [
+    "CALC-102"
+   ],
+   "fixtures": [
+    "GV-115",
+    "GV-144"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-M-113 for SCR-128, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-115, GV-144 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-114",
+   "feature": "F-M09",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-060"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-114",
+   "calculations": [
+    "CALC-092",
+    "CALC-096"
+   ],
+   "fixtures": [
+    "GV-109",
+    "GV-132"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-M-114 for SCR-060, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-109, GV-132 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-115",
+   "feature": "F-M10",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-127"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-115",
+   "calculations": [
+    "CALC-103"
+   ],
+   "fixtures": [
+    "GV-116"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-M-115 for SCR-127, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-116 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-116",
+   "feature": "F-M11",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-122"
+   ],
+   "connectors": [
+    "CON-33"
+   ],
+   "fixture_screen": "FIX-M-116",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-M-116 for SCR-122, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-122), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-117",
+   "feature": "F-D19",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-011",
+    "SCR-120"
+   ],
+   "connectors": [
+    "CON-02",
+    "CON-08",
+    "CON-09"
+   ],
+   "fixture_screen": "FIX-D-117",
+   "calculations": [
+    "CALC-079",
+    "CALC-059",
+    "CALC-091"
+   ],
+   "fixtures": [
+    "GV-083",
+    "GV-103",
+    "GV-131",
+    "GV-155"
+   ],
+   "work_package": "WP-37",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-D-117 for SCR-011,SCR-120, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-083, GV-103, GV-131, GV-155 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-118",
+   "feature": "F-B18",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-010",
+    "SCR-013",
+    "SCR-015"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-118",
+   "calculations": [
+    "CALC-108"
+   ],
+   "fixtures": [
+    "GV-146"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-B-118 for SCR-010,SCR-013,SCR-015, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-146 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-119",
+   "feature": "F-K01",
+   "sources": [
+    "S27",
+    "S28",
+    "S29",
+    "S30",
+    "S35"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-K-119",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-05",
+   "owner_role": "Integration eng",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-K-119 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-120",
+   "feature": "F-K02",
+   "sources": [
+    "S33",
+    "S34"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-02"
+   ],
+   "fixture_screen": "FIX-K-120",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-37",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-K-120 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-121",
+   "feature": "F-K03",
+   "sources": [
+    "S05",
+    "S06",
+    "S29"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-03"
+   ],
+   "fixture_screen": "FIX-K-121",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "\u2014",
+   "acceptance": "Given synthetic fixture FIX-K-121 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-122",
+   "feature": "F-K04",
+   "sources": [
+    "S12"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-04"
+   ],
+   "fixture_screen": "FIX-K-122",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "\u2014",
+   "acceptance": "Given synthetic fixture FIX-K-122 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-123",
+   "feature": "F-K05",
+   "sources": [
+    "S20",
+    "S21",
+    "S22",
+    "S23",
+    "S24",
+    "S25",
+    "S26"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-K-123",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-12",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-K-123 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-124",
+   "feature": "F-K06",
+   "sources": [
+    "S20"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-06"
+   ],
+   "fixture_screen": "FIX-K-124",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-12",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-K-124 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-125",
+   "feature": "F-K07",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-07"
+   ],
+   "fixture_screen": "FIX-K-125",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-K-125 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-126",
+   "feature": "F-K08",
+   "sources": [
+    "S01",
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-08"
+   ],
+   "fixture_screen": "FIX-K-126",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-37",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-K-126 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-127",
+   "feature": "F-K09",
+   "sources": [
+    "S01",
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-09"
+   ],
+   "fixture_screen": "FIX-K-127",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-37",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-K-127 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-128",
+   "feature": "F-K10",
+   "sources": [
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-10"
+   ],
+   "fixture_screen": "FIX-K-128",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "\u2014",
+   "acceptance": "Given synthetic fixture FIX-K-128 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-129",
+   "feature": "F-K11",
+   "sources": [
+    "S01"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-11"
+   ],
+   "fixture_screen": "FIX-K-129",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-K-129 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-130",
+   "feature": "F-K12",
+   "sources": [
+    "S01"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-12"
+   ],
+   "fixture_screen": "FIX-K-130",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "\u2014",
+   "acceptance": "Given synthetic fixture FIX-K-130 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-131",
+   "feature": "F-K13",
+   "sources": [
+    "S01",
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-13"
+   ],
+   "fixture_screen": "FIX-K-131",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "\u2014",
+   "acceptance": "Given synthetic fixture FIX-K-131 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-132",
+   "feature": "F-K14",
+   "sources": [
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-14"
+   ],
+   "fixture_screen": "FIX-K-132",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "\u2014",
+   "acceptance": "Given synthetic fixture FIX-K-132 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-133",
+   "feature": "F-K15",
+   "sources": [
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-15"
+   ],
+   "fixture_screen": "FIX-K-133",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "\u2014",
+   "acceptance": "Given synthetic fixture FIX-K-133 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-134",
+   "feature": "F-K16",
+   "sources": [
+    "S09",
+    "S11",
+    "S14"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-16",
+    "CON-24",
+    "CON-25",
+    "CON-26",
+    "CON-27"
+   ],
+   "fixture_screen": "FIX-K-134",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-K-134 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-135",
+   "feature": "F-K17",
+   "sources": [
+    "S11",
+    "S18"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-17"
+   ],
+   "fixture_screen": "FIX-K-135",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-K-135 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-136",
+   "feature": "F-K18",
+   "sources": [
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-18"
+   ],
+   "fixture_screen": "FIX-K-136",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-K-136 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-137",
+   "feature": "F-K19",
+   "sources": [
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-19"
+   ],
+   "fixture_screen": "FIX-K-137",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-39",
+   "owner_role": "Integration eng",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-K-137 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-138",
+   "feature": "F-K20",
+   "sources": [
+    "S02",
+    "S49"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-20"
+   ],
+   "fixture_screen": "FIX-K-138",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-39",
+   "owner_role": "Integration eng",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-K-138 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-139",
+   "feature": "F-K21",
+   "sources": [
+    "S02"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-21"
+   ],
+   "fixture_screen": "FIX-K-139",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-39",
+   "owner_role": "Integration eng",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-K-139 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-140",
+   "feature": "F-K22",
+   "sources": [
+    "S02",
+    "OBS"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-22"
+   ],
+   "fixture_screen": "FIX-K-140",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-39",
+   "owner_role": "Integration eng",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-K-140 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-141",
+   "feature": "F-K23",
+   "sources": [
+    "S12",
+    "OBS"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-23"
+   ],
+   "fixture_screen": "FIX-K-141",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-K-141 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-142",
+   "feature": "F-K24",
+   "sources": [
+    "S31"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-24"
+   ],
+   "fixture_screen": "FIX-K-142",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "\u2014",
+   "acceptance": "Given synthetic fixture FIX-K-142 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-143",
+   "feature": "F-K25",
+   "sources": [
+    "S32"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-25"
+   ],
+   "fixture_screen": "FIX-K-143",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-22",
+   "owner_role": "Full-stack",
+   "release": "R4",
+   "acceptance": "Given synthetic fixture FIX-K-143 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-144",
+   "feature": "F-K26",
+   "sources": [
+    "S04",
+    "S34"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-26"
+   ],
+   "fixture_screen": "FIX-K-144",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "",
+   "owner_role": null,
+   "release": "\u2014",
+   "acceptance": "Given synthetic fixture FIX-K-144 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-145",
+   "feature": "F-K27",
+   "sources": [
+    "OBS",
+    "S49"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-27"
+   ],
+   "fixture_screen": "FIX-K-145",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-25",
+   "owner_role": "Full-stack",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-K-145 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-146",
+   "feature": "F-K28",
+   "sources": [
+    "S37"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-28"
+   ],
+   "fixture_screen": "FIX-K-146",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-26",
+   "owner_role": "Backend",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-K-146 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-147",
+   "feature": "F-K29",
+   "sources": [
+    "S20"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-29"
+   ],
+   "fixture_screen": "FIX-K-147",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-K-147 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-148",
+   "feature": "F-K30",
+   "sources": [
+    "OBS",
+    "PROP"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-32"
+   ],
+   "fixture_screen": "FIX-K-148",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-35",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-K-148 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-149",
+   "feature": "F-K31",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-33"
+   ],
+   "fixture_screen": "FIX-K-149",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-K-149 for SCR-100, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-100), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-150",
+   "feature": "F-L01",
+   "sources": [
+    "OBS",
+    "S11"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-110"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-150",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-11",
+   "owner_role": "Backend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-L-150 for SCR-110, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-110), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-151",
+   "feature": "F-L02",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-111"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-151",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-11",
+   "owner_role": "Backend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-L-151 for SCR-111, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-111), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-152",
+   "feature": "F-L03",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-110"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-152",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-11",
+   "owner_role": "Backend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-L-152 for SCR-110, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-110), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-153",
+   "feature": "F-L04",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-112",
+    "SCR-113"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-L-153",
+   "calculations": [
+    "CALC-027",
+    "CALC-073"
+   ],
+   "fixtures": [
+    "GV-034",
+    "GV-098"
+   ],
+   "work_package": "WP-25",
+   "owner_role": "Full-stack",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-L-153 for SCR-112,SCR-113, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-034, GV-098 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-154",
+   "feature": "F-L05",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-113"
+   ],
+   "connectors": [
+    "CON-27"
+   ],
+   "fixture_screen": "FIX-L-154",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-25",
+   "owner_role": "Full-stack",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-L-154 for SCR-113, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-113), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-155",
+   "feature": "F-L06",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS+PROP",
+   "screens": [
+    "SCR-116"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-155",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-L-155 for SCR-116, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-116), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-156",
+   "feature": "F-L07",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-114"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-156",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-06",
+   "owner_role": "Backend",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-L-156 for SCR-114, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-114), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-157",
+   "feature": "F-L08",
+   "sources": [
+    "S03",
+    "S08"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-117"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-157",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-24",
+   "owner_role": "Frontend",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-L-157 for SCR-117, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-117), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-158",
+   "feature": "F-L09",
+   "sources": [
+    "S03"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-117"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-158",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-24",
+   "owner_role": "Frontend",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-L-158 for SCR-117, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-117), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-159",
+   "feature": "F-L10",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-010"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-159",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-33",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Given synthetic fixture FIX-L-159 for SCR-010, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-010), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-160",
+   "feature": "F-L11",
+   "sources": [
+    "S24"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-160",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-03",
+   "owner_role": "Backend lead",
+   "release": "R0",
+   "acceptance": "Given synthetic fixture FIX-L-160 for SCR-101, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-101), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-161",
+   "feature": "F-L12",
+   "sources": [
+    "OBS",
+    "S37"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-118"
+   ],
+   "connectors": [
+    "CON-28"
+   ],
+   "fixture_screen": "FIX-L-161",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-26",
+   "owner_role": "Backend",
+   "release": "R5",
+   "acceptance": "Given synthetic fixture FIX-L-161 for SCR-118, when the user performs the screen-level acceptance test in 03_UI_UX_Atlas.md (SCR-118), then all listed controls render, validation/errors behave as specified, and the action is audit-logged.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-162",
+   "feature": "F-B01",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-010",
+    "SCR-016"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-B-162",
+   "calculations": [
+    "CALC-002",
+    "CALC-013",
+    "CALC-045",
+    "CALC-108"
+   ],
+   "fixtures": [
+    "GV-002",
+    "GV-003",
+    "GV-015",
+    "GV-030",
+    "GV-045",
+    "GV-046",
+    "GV-146"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "Fixture GV-030: sales unchanged when attributed revenue present.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-163",
+   "feature": "F-J04",
+   "sources": [
+    "OBS",
+    "S11"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-091",
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-J-163",
+   "calculations": [
+    "CALC-047"
+   ],
+   "fixtures": [
+    "GV-031",
+    "GV-032",
+    "GV-140"
+   ],
+   "work_package": "WP-13",
+   "owner_role": "Financial/data eng",
+   "release": "R2",
+   "acceptance": "GV-031/032.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-164",
+   "feature": "F-D01",
+   "sources": [
+    "OBS",
+    "S03"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-032",
+    "SCR-011"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-D-164",
+   "calculations": [
+    "CALC-003",
+    "CALC-067",
+    "CALC-109"
+   ],
+   "fixtures": [
+    "GV-004",
+    "GV-011",
+    "GV-091",
+    "GV-147"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "GV-011.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-165",
+   "feature": "F-D03",
+   "sources": [
+    "S01",
+    "S49"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-033"
+   ],
+   "connectors": [
+    "CON-32"
+   ],
+   "fixture_screen": "FIX-D-165",
+   "calculations": [
+    "CALC-020"
+   ],
+   "fixtures": [
+    "GV-022",
+    "GV-023",
+    "GV-137"
+   ],
+   "work_package": "WP-13",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "GV-020/021.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-166",
+   "feature": "F-C03",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-022"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-166",
+   "calculations": [
+    "CALC-008"
+   ],
+   "fixtures": [
+    "GV-012",
+    "GV-013"
+   ],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "GV-013.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-167",
+   "feature": "F-D02",
+   "sources": [
+    "OBS",
+    "S17"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-034"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-167",
+   "calculations": [
+    "CALC-004",
+    "CALC-009",
+    "CALC-053",
+    "CALC-054",
+    "CALC-082"
+   ],
+   "fixtures": [
+    "GV-005",
+    "GV-016",
+    "GV-077",
+    "GV-078",
+    "GV-122",
+    "GV-138"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "GV-016.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-168",
+   "feature": "F-C01",
+   "sources": [
+    "OBS",
+    "S01",
+    "S13"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-021"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-168",
+   "calculations": [
+    "CALC-005",
+    "CALC-006",
+    "CALC-007",
+    "CALC-078"
+   ],
+   "fixtures": [
+    "GV-006",
+    "GV-007",
+    "GV-008",
+    "GV-009",
+    "GV-010",
+    "GV-018",
+    "GV-069",
+    "GV-072",
+    "GV-102"
+   ],
+   "work_package": "WP-09",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "GV-008.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-169",
+   "feature": "F-C08",
+   "sources": [
+    "S18"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-076"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-C-169",
+   "calculations": [
+    "CALC-043"
+   ],
+   "fixtures": [
+    "GV-044"
+   ],
+   "work_package": "WP-34",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "GV-018.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-170",
+   "feature": "F-B04",
+   "sources": [
+    "OBS",
+    "S13",
+    "S18"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-013"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-170",
+   "calculations": [
+    "CALC-013",
+    "CALC-050",
+    "CALC-051",
+    "CALC-108"
+   ],
+   "fixtures": [
+    "GV-015",
+    "GV-046",
+    "GV-073",
+    "GV-074",
+    "GV-075",
+    "GV-146"
+   ],
+   "work_package": "WP-08",
+   "owner_role": "Frontend",
+   "release": "R1",
+   "acceptance": "GV-017/019.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-171",
+   "feature": "F-F02",
+   "sources": [
+    "S01",
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-051"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-F-171",
+   "calculations": [
+    "CALC-034",
+    "CALC-035",
+    "CALC-036"
+   ],
+   "fixtures": [
+    "GV-037",
+    "GV-061",
+    "GV-062",
+    "GV-065",
+    "GV-071"
+   ],
+   "work_package": "WP-14",
+   "owner_role": "Data eng",
+   "release": "R2",
+   "acceptance": "GV-035/036.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-172",
+   "feature": "F-F04",
+   "sources": [
+    "OBS",
+    "S20"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-051"
+   ],
+   "connectors": [
+    "CON-29"
+   ],
+   "fixture_screen": "FIX-F-172",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-14",
+   "owner_role": "Data eng",
+   "release": "R2",
+   "acceptance": "GV-037.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-173",
+   "feature": "F-I02",
+   "sources": [
+    "S10",
+    "PROP"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-080",
+    "SCR-047"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-I-173",
+   "calculations": [
+    "CALC-041",
+    "CALC-075"
+   ],
+   "fixtures": [
+    "GV-040",
+    "GV-041",
+    "GV-100"
+   ],
+   "work_package": "WP-20",
+   "owner_role": "Backend",
+   "release": "R4",
+   "acceptance": "GV-040/041.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-174",
+   "feature": "F-D09",
+   "sources": [
+    "OBS",
+    "S15"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-101"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-D-174",
+   "calculations": [
+    "CALC-024"
+   ],
+   "fixtures": [
+    "GV-025",
+    "GV-026"
+   ],
+   "work_package": "WP-07",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "GV-025.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-175",
+   "feature": "F-L07",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-114"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-L-175",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-06",
+   "owner_role": "Backend",
+   "release": "R0",
+   "acceptance": "GV-046.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-176",
+   "feature": "F-I02",
+   "sources": [
+    "S10",
+    "PROP"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-080",
+    "SCR-047"
+   ],
+   "connectors": [
+    "CON-24",
+    "CON-25",
+    "CON-26",
+    "CON-27"
+   ],
+   "fixture_screen": "FIX-I-176",
+   "calculations": [
+    "CALC-041",
+    "CALC-075"
+   ],
+   "fixtures": [
+    "GV-040",
+    "GV-041",
+    "GV-100"
+   ],
+   "work_package": "WP-20",
+   "owner_role": "Backend",
+   "release": "R4",
+   "acceptance": "Contract tests WP-20.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-177",
+   "feature": "F-L12",
+   "sources": [
+    "OBS",
+    "S37"
+   ],
+   "evidence": "OBS",
+   "screens": [
+    "SCR-118"
+   ],
+   "connectors": [
+    "CON-28"
+   ],
+   "fixture_screen": "FIX-L-177",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-26",
+   "owner_role": "Backend",
+   "release": "R5",
+   "acceptance": "Prompt-injection + authority tests.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-178",
+   "feature": "F-B13",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS-R",
+   "screens": [
+    "SCR-011",
+    "SCR-013"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-B-178",
+   "calculations": [
+    "CALC-050",
+    "CALC-051",
+    "CALC-052"
+   ],
+   "fixtures": [
+    "GV-073",
+    "GV-074",
+    "GV-075",
+    "GV-076"
+   ],
+   "work_package": "WP-34",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "GV-073/074.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-179",
+   "feature": "F-E12",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS-R",
+   "screens": [
+    "SCR-133",
+    "SCR-134"
+   ],
+   "connectors": [
+    "CON-05",
+    "CON-08",
+    "CON-09"
+   ],
+   "fixture_screen": "FIX-E-179",
+   "calculations": [
+    "CALC-061",
+    "CALC-056"
+   ],
+   "fixtures": [
+    "GV-080",
+    "GV-093",
+    "GV-151"
+   ],
+   "work_package": "",
+   "owner_role": null,
+   "release": "R2",
+   "acceptance": "GV-030, GV-093.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-180",
+   "feature": "F-M02",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-123"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-180",
+   "calculations": [
+    "CALC-093",
+    "CALC-094",
+    "CALC-095",
+    "CALC-096"
+   ],
+   "fixtures": [
+    "GV-105",
+    "GV-106",
+    "GV-107",
+    "GV-108",
+    "GV-109"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "GV-105..107.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-181",
+   "feature": "F-M07",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-120",
+    "SCR-121",
+    "SCR-127"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-181",
+   "calculations": [
+    "CALC-097",
+    "CALC-100",
+    "CALC-101",
+    "CALC-110"
+   ],
+   "fixtures": [
+    "GV-110",
+    "GV-113",
+    "GV-114",
+    "GV-139",
+    "GV-148"
+   ],
+   "work_package": "WP-32",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "GV-114.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-182",
+   "feature": "F-M04",
+   "sources": [
+    "R-B2B"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-126"
+   ],
+   "connectors": [],
+   "fixture_screen": "FIX-M-182",
+   "calculations": [
+    "CALC-100"
+   ],
+   "fixtures": [
+    "GV-113"
+   ],
+   "work_package": "WP-31",
+   "owner_role": "Full-stack",
+   "release": "R1",
+   "acceptance": "GV-113.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-183",
+   "feature": "F-D16",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-033",
+    "SCR-136"
+   ],
+   "connectors": [
+    "CON-32"
+   ],
+   "fixture_screen": "FIX-D-183",
+   "calculations": [
+    "CALC-105"
+   ],
+   "fixtures": [
+    "GV-117"
+   ],
+   "work_package": "WP-35",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "GV-117.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-184",
+   "feature": "F-D12",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "OBS-R",
+   "screens": [
+    "SCR-011",
+    "SCR-120"
+   ],
+   "connectors": [
+    "CON-05"
+   ],
+   "fixture_screen": "FIX-D-184",
+   "calculations": [
+    "CALC-076",
+    "CALC-052"
+   ],
+   "fixtures": [
+    "GV-076",
+    "GV-090"
+   ],
+   "work_package": "WP-13",
+   "owner_role": "Financial/data eng",
+   "release": "R1",
+   "acceptance": "GV-090.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-185",
+   "feature": "F-A11",
+   "sources": [
+    "S04",
+    "OBS"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-101",
+    "SCR-010"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-A-185",
+   "calculations": [
+    "CALC-113",
+    "CALC-026"
+   ],
+   "fixtures": [
+    "GV-033",
+    "GV-152",
+    "GV-153"
+   ],
+   "work_package": "WP-38",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-MKT-001 for SCR-101,SCR-010, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-033, GV-152, GV-153 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-186",
+   "feature": "F-J06",
+   "sources": [
+    "S09",
+    "S11",
+    "S18",
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-090",
+    "SCR-032"
+   ],
+   "connectors": [
+    "CON-16",
+    "CON-17",
+    "CON-18"
+   ],
+   "fixture_screen": "FIX-J-186",
+   "calculations": [
+    "CALC-114",
+    "CALC-067"
+   ],
+   "fixtures": [
+    "GV-091",
+    "GV-154"
+   ],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-J-186 for SCR-090,SCR-032, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-091, GV-154 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-187",
+   "feature": "F-J07",
+   "sources": [
+    "S14"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-090"
+   ],
+   "connectors": [
+    "CON-16"
+   ],
+   "fixture_screen": "FIX-J-187",
+   "calculations": [
+    "CALC-079"
+   ],
+   "fixtures": [
+    "GV-103",
+    "GV-155"
+   ],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-J-187 for SCR-090, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-103, GV-155 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-188",
+   "feature": "F-D19",
+   "sources": [
+    "OBS"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-011",
+    "SCR-120"
+   ],
+   "connectors": [
+    "CON-02",
+    "CON-08",
+    "CON-09"
+   ],
+   "fixture_screen": "FIX-D-188",
+   "calculations": [
+    "CALC-079",
+    "CALC-059",
+    "CALC-091"
+   ],
+   "fixtures": [
+    "GV-083",
+    "GV-103",
+    "GV-131",
+    "GV-155"
+   ],
+   "work_package": "WP-37",
+   "owner_role": "Integration eng",
+   "release": "R1",
+   "acceptance": "Connector scope review: CON-02/08/09/16 tokens hold read/report scopes only; no route or menu item exists for omitted screens.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-189",
+   "feature": "F-A11",
+   "sources": [
+    "S04",
+    "OBS"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-101",
+    "SCR-010"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-A-189",
+   "calculations": [
+    "CALC-113",
+    "CALC-026"
+   ],
+   "fixtures": [
+    "GV-033",
+    "GV-152",
+    "GV-153"
+   ],
+   "work_package": "WP-38",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "GV-152/153 pass; adding a synthetic marketplace row enables ingestion without a code change.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-190",
+   "feature": "F-G11",
+   "sources": [
+    "S11",
+    "S09"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-060",
+    "SCR-063"
+   ],
+   "connectors": [
+    "CON-16"
+   ],
+   "fixture_screen": "FIX-G-190",
+   "calculations": [
+    "CALC-037",
+    "CALC-038",
+    "CALC-039",
+    "CALC-040"
+   ],
+   "fixtures": [
+    "GV-038",
+    "GV-039",
+    "GV-052",
+    "GV-063",
+    "GV-133",
+    "GV-134"
+   ],
+   "work_package": "WP-15",
+   "owner_role": "Full-stack",
+   "release": "R3",
+   "acceptance": "Given synthetic fixture FIX-G-190 for SCR-060,SCR-063, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-038, GV-039, GV-052, GV-063, GV-133, GV-134 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-191",
+   "feature": "F-A12",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-101",
+    "SCR-060"
+   ],
+   "connectors": [
+    "CON-01"
+   ],
+   "fixture_screen": "FIX-A-191",
+   "calculations": [
+    "CALC-067",
+    "CALC-092",
+    "CALC-113"
+   ],
+   "fixtures": [
+    "GV-091",
+    "GV-132",
+    "GV-152",
+    "GV-153"
+   ],
+   "work_package": "WP-38",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-A-191 for SCR-101,SCR-060, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-091, GV-132, GV-152, GV-153 to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-192",
+   "feature": "F-J08",
+   "sources": [
+    "S11"
+   ],
+   "evidence": "DOC",
+   "screens": [
+    "SCR-110"
+   ],
+   "connectors": [
+    "CON-16",
+    "CON-17"
+   ],
+   "fixture_screen": "FIX-J-192",
+   "calculations": [],
+   "fixtures": [],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-J-192 for SCR-110, when the user opens the screen, then all listed columns/controls render and values match golden vectors  to the cent.",
+   "status": "UNACCEPTED"
+  },
+  {
+   "requirement": "REQ-193",
+   "feature": "F-J09",
+   "sources": [
+    "PROP"
+   ],
+   "evidence": "PROP",
+   "screens": [
+    "SCR-090",
+    "SCR-100"
+   ],
+   "connectors": [
+    "CON-16"
+   ],
+   "fixture_screen": "FIX-J-193",
+   "calculations": [
+    "CALC-079",
+    "CALC-114"
+   ],
+   "fixtures": [
+    "GV-103",
+    "GV-154",
+    "GV-155"
+   ],
+   "work_package": "WP-23",
+   "owner_role": "Integration eng",
+   "release": "R2",
+   "acceptance": "Given synthetic fixture FIX-J-193 for SCR-090,SCR-100, when the user opens the screen, then all listed columns/controls render and values match golden vectors GV-103, GV-154, GV-155 to the cent.",
+   "status": "UNACCEPTED"
+  }
+ ]
+}

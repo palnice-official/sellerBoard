@@ -1,0 +1,3 @@
+id,date,change,by,status
+CHG-001,2026-09-10,Initial baseline v0.1 of full package,Architect,Draft
+CHG-002,2026-10-10,"v0.2: E2E formula audit (Sellerboard.com + .io), unified Amazon+Shopify+B2B dashboard, B2B module, visual parity profile, AWS hosting decision",Architect,Draft

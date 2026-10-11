@@ -1,0 +1,63 @@
+source_id,url,title,checked_date,release_or_event_date,supported_claims,confidence,scope,access_limitation
+S01,https://sellerboard.io/,Profit & LTV Analytics for Shopify | sellerboard,2026-09-10,n/a,"Shopify product features, plans $9/$19/$39/$79, integrations",High,Public marketing/pricing,Annual price token broken on page
+S02,https://apps.shopify.com/sellerboard-profit-ltv-customer-lifetime-value-analytics,Shopify App Store listing,2026-09-10,launched 2021-07-13,Developer nextechnology GmbH; integrations list; plans,High,Public listing,
+S03,https://sellerboard.com/,Accurate Profit Analytics for Amazon Sellers,2026-09-10,n/a,"Amazon features; plans $19–$79; limits (orders, users, accounts, reports); 30k products",High,Public marketing/pricing,No /pricing or /features page (404)
+S04,https://sellerboard.com/ppc,PPC profit analytics and optimization,2026-09-10,n/a,"Bid strategies, harvesting, negatives, break-even ACOS, 23 marketplaces",High,Marketing,
+S05,https://sellerboard.com/search-terms,Search Term Performance,2026-09-10,n/a,Brand Analytics based; Brand Registry required,High,Marketing,
+S06,https://sellerboard.com/keyword-research,Keyword research,2026-09-10,n/a,Keyword suggestions; Brand Registry required,High,Marketing,
+S07,https://sellerboard.com/autoresponder,Follow-up emails & Request a review,2026-09-10,n/a,"Targeting, quotas per plan",High,Marketing,
+S08,https://sellerboard.com/reseller-workflow,Reseller workflow,2026-09-10,n/a,"Mobile scan, FNSKU labels, shipment creation",Medium,Marketing,Mobile app scope
+S09,https://sellerboard.com/walmart,Walmart profit analytics,2026-09-10,n/a,Walmart US/CA/MX,High,Marketing,
+S10,https://blog.sellerboard.com/2026/09/03/the-sellerboard-repricer-dynamic-amazon-repricing-that-runs-on-your-real-profit-numbers/,Repricer announcement,2026-09-10,2026-09-03,"Strategies, floors, guardrails, price history",High,Changelog,Not visible in audited accounts
+S11,https://blog.sellerboard.com/2026/08/17/new-in-sellerboard-cleaner-walmart-multi-channel-handling-a-walmart-only-summary-dashboard-and-report-exports-for-walmart-and-ebay/,Walmart MCF / summary / exports,2026-09-10,2026-08-17,MCF auto-detect; Walmart-only summary; Walmart/eBay reports,High,Changelog,
+S12,https://blog.sellerboard.com/2026/08/13/new-in-sellerboard-amazon-attribution-automatic-cogs-import-and-real-acos-on-the-trends-page/,"Attribution, COGS import, Real ACOS",2026-09-10,2026-08-13,Attribution metrics; Sheets COGS import; Real ACOS,High,Changelog,
+S13,https://blog.sellerboard.com/2026/07/09/new-in-sellerboard-reorder-alerts-sales-velocity-flexible-fifo-cogs-and-year-over-year-comparison/,"Reorder, FIFO, YoY",2026-09-10,2026-07-09,Action required; velocity; FIFO oversold; YoY,High,Changelog,
+S14,https://blog.sellerboard.com/2026/05/21/asp-tracking-full-walmart-ad-spend-visibility-smarter-shipping-logic-whats-new-in-sellerboard/,"ASP, Walmart SEM, shipping logic",2026-09-10,2026-05-21,ASP column; highest shipping cost option,High,Changelog,
+S15,https://blog.sellerboard.com/2026/05/18/new-in-sellerboard-amortize-amazon-fees-for-a-clearer-view-of-your-real-profits/,Amortize Amazon fees,2026-09-10,2026-05-18,Daily amortization of listed fees,High,Changelog,
+S16,https://blog.sellerboard.com/2026/04/17/latest-sellerboard-updates-smarter-expense-control-deeper-search-term-insights/,"Expense control, search terms",2026-09-10,2026-04-17,Multi-marketplace expense; tag-based variable expenses,High,Changelog,
+S17,https://blog.sellerboard.com/2026/04/10/new-in-sellerboard-refund-clarity-stronger-account-security/,"Refunds report, 2FA",2026-09-10,2026-04-10,Refunds report; authenticator 2FA,High,Changelog,
+S18,https://blog.sellerboard.com/2026/03/13/new-in-sellerboard-visual-pl-insights-custom-dashboards-stronger-profit-accuracy/,"Visual P&L, custom tiles, VAT split",2026-09-10,2026-03-13,Heatmap; 8 custom tiles; COGS alerts; VAT/MF VAT split,High,Changelog,
+S19,https://blog.sellerboard.com/2021/05/14/why-should-you-start-expanding-your-amazon-based-business-to-shopify/,Amazon→Shopify expansion (2021),2026-09-10,2021-05-14 (mod. 2022-11-14),Historical Shopify connector claim (listing + MCF),Low,Historical editorial,Not corroborated on current pages; settings section observed only
+S20,https://shopify.dev/docs/api/usage/access-scopes,Shopify API access scopes,2026-09-10,n/a,Scopes; read_all_orders approval; payouts; own subscription contracts,High,Official docs,
+S21,https://shopify.dev/docs/api/admin-graphql/latest/objects/Order,Shopify Order object,2026-09-10,2026-07,"Order money fields, statuses, dates",High,Official docs,
+S22,https://shopify.dev/docs/api/usage/bulk-operations/queries,Shopify bulk operations,2026-09-10,n/a,"≤5 concurrent (2026-01+), JSONL, 10-day limit",High,Official docs,
+S23,https://shopify.dev/docs/apps/build/webhooks,Shopify webhooks,2026-09-10,n/a,"HMAC, timeouts, 8 retries/4h, dedupe id",High,Official docs,
+S24,https://shopify.dev/docs/apps/launch/protected-customer-data,Protected customer data,2026-09-10,n/a,L1/L2 requirements; GDPR webhooks,High,Official docs,
+S25,https://shopify.dev/docs/api/usage/versioning,Shopify API versioning,2026-09-10,n/a,Quarterly versions; support windows,High,Official docs,
+S26,https://shopify.dev/docs/api/usage/limits,Shopify API limits,2026-09-10,n/a,GraphQL cost restore rates by plan,High,Official docs,
+S27,https://developer-docs.amazon.com/sp-api/docs/welcome,SP-API welcome,2026-09-10,modified 2026-09-09,LWA; developer types; API families,High,Official docs,302 → developer-docs.amazon.com mirror host
+S28,https://developer-docs.amazon.com/sp-api/docs/register-as-a-private-developer,Private developer registration,2026-09-10,n/a,Registration steps; 5-day case response,High,Official docs,
+S29,https://developer-docs.amazon.com/sp-api/docs/roles-in-the-selling-partner-api,SP-API roles,2026-09-10,n/a,Unrestricted vs restricted PII roles,High,Official docs,
+S30,https://developer-docs.amazon.com/sp-api/docs/reports-api,Reports API,2026-09-10,v2021-06-30,Report types; settlement scheduled-only; 90-day doc retention,High,Official docs,
+S31,https://developer-docs.amazon.com/sp-api/docs/set-up-the-solicitations-api,Solicitations API setup,2026-09-10,n/a,5–30 day window; one per order,High,Official docs,
+S32,https://developer-docs.amazon.com/sp-api/docs/manage-purchasable-offer,Manage purchasable offer,2026-09-10,n/a,patchListingsItem price patch,High,Official docs,
+S33,https://advertising.amazon.com/API/docs/en-us/guides/onboarding/apply-for-access,Ads API apply for access,2026-09-10,n/a,Access process,Low,Official page (JS shell not rendered),Body not rendered; deep-link slug unverified; facts from third parties — UNVERIFIED
+S34,https://advertising.amazon.com/API/docs/en-us/guides/reporting/v3/get-started,Ads reporting v3,2026-09-10,n/a,Async reports; lookback windows,Low,Official page (JS shell not rendered),Body not rendered; slug unverified; UNVERIFIED
+S35,https://developer.amazonservices.com/cancellation-of-sp-api-fees,SP-API fee cancellation,2026-09-10,n/a,Fees will not proceed 'at this time',High,Official notice,Monitor for reintroduction
+S36,https://www.ifrs.org/issued-standards/list-of-standards/ias-38-intangible-assets/,IAS 38,2026-09-10,2026 edition,Development capitalization criteria,High,Standard,Ind AS 38 equivalent
+S37,https://www.anthropic.com/claude-fable-and-mythos-5-1,Fable 5.1 announcement,2026-09-10,Sep 2026,Model pricing $10/$50 per MTok,High,Vendor announcement,
+S38,https://code.claude.com/docs/en/best-practices,Claude Code best practices,2026-09-10,n/a,"Workflow, CLAUDE.md, permissions",High,Official docs,
+S39,https://code.claude.com/docs/en/memory,Claude Code memory,2026-09-10,n/a,"CLAUDE.md hierarchy, imports, rules",High,Official docs,
+S40,https://developers.openai.com/codex/guides/agents-md/,Codex AGENTS.md,2026-09-10,n/a,"AGENTS.md chain, 32 KiB cap",High,Official docs,302 → learn.chatgpt.com
+S41,https://blog.sellerboard.com/2026/07/16/new-in-sellerboard-summary-dashboard-for-amazon-walmart-and-ebay/,Summary Dashboard for Amazon/Walmart/eBay,2026-09-10,2026-07-16,Summary dashboard across accounts,High,Changelog,Added during blog sweep
+S42,https://blog.sellerboard.com/,Blog index & changelog category,2026-09-10,newest 2026-09-03,No posts after cutoff,High,Index,
+S43,https://sellerboard.com/inventory,Inventory page,2026-09-10,n/a,"Reorder planning, POs, suppliers, apps, extension",High,Marketing,
+S44,https://sellerboard.com/alerts,Alerts page,2026-09-10,n/a,"Alert types, routing",High,Marketing,
+S45,https://developer-docs.amazon.com/sp-api/docs/finances-api,Finances API,2026-09-10,v2024-06-19 / v0,Rate limits; ≤180-day windows; 48h lag,High,Official docs,
+S46,https://developer-docs.amazon.com/sp-api/docs/protecting-amazon-api-applications-data-encryption-and-recovery,Data retention & recovery,2026-09-10,n/a,PII ≤30 days after delivery,Medium,Official docs,Retention figure from encryption-and-recovery page; DPP page itself returned 403
+S47,https://platform.claude.com/docs/en/about-claude/pricing,Anthropic API pricing,2026-09-10,n/a,Per-model token prices,High,Official docs,
+S48,https://developer.walmart.com/doc/us/mp/us-mp-getting-started/,Walmart Marketplace API,2026-09-10,n/a,OAuth 15-min token; API groups,High,Official docs,
+S49,https://sellerboard.com/faq,Sellerboard FAQ,2026-09-10,n/a,"Reimbursement claims, QuickBooks sync, ShipStation shipping cost, multi-channel",Medium,Public FAQ,
+OBS,app.sellerboard.com (authorized session),Read-only navigation of user's Sellerboard accounts,2026-09-10,n/a,"Screens, controls, settings, fee names observed",High,Authorized interaction,No writes; screenshots not shipped
+S50,see SOW §30,"help.sellerboard.com — help-centre metric articles (≈ 30 articles, last modified 2026-06-16): gross/net profit, indirect",2026-10-10,,see SOW §30,Medium,v0.2 source,
+S51,see SOW §30,"blog.sellerboard.com posts 2026-09-10 → 2026-10-08 — Attribution campaign-level profit, FBM refund reasons, eBay bulk hi",2026-10-10,,see SOW §30,Medium,v0.2 source,
+S52,see SOW §30,"sellerboard.io homepage (EN/DE) and Shopify App Store listing, refreshed 2026-10-10 — features, plan tiers, rating; no c",2026-10-10,,see SOW §30,Medium,v0.2 source,
+S53,see SOW §30,"Third-party Sellerboard.io tutorials (e.g., vovaeven.com, revenuegeeks) — COGS types, POAS, triggering visit, LTV profit",2026-10-10,,see SOW §30,Medium,v0.2 source,
+S54,see SOW §30,GST e-invoice system (einvoice6.gst.gov.in; Notification 10/2023-Central Tax) — IRN applicability by AATO; 30-day report,2026-10-10,,see SOW §30,Medium,v0.2 source,
+S55,see SOW §30,E-way bill system (ewaybillgst.gov.in) — consignment value threshold; inter-state rule; state-specific intra-state thres,2026-10-10,,see SOW §30,Medium,v0.2 source,
+S56,see SOW §30,CBIC GST Act and Rules (cbic-gst.gov.in; gst.gov.in) — Rule 46 invoice particulars; s.15(3) discounts; s.34 credit notes,2026-10-10,,see SOW §30,Medium,v0.2 source,
+S57,see SOW §30,Income Tax India (incometaxindia.gov.in) — TDS s.194Q and its successor s.393(1) under the Income-tax Act 2025 from 1 Ap,2026-10-10,,see SOW §30,Medium,v0.2 source,
+S58,see SOW §30,"UK HMRC VAT guidance (VATREC5010; VAT Notice 735; VAT Notice 700) and EU 2020 ""quick fixes"" explanatory notes (VIES VAT ",2026-10-10,,see SOW §30,Medium,v0.2 source,
+S59,see SOW §30,"OpenAI ChatGPT Codex documentation and Help Center — cloud environments (current and legacy), internet access, code revi",2026-10-10,,see SOW §30,Medium,v0.2 source,
+S60,see SOW §30,"OpenAI Help Center — ChatGPT Business pricing (https://help.openai.com/en/articles/8792828), checked 2026-10-10: Busines",2026-10-10,,see SOW §30,Medium,v0.2 source,
+OBS-2,app.sellerboard.io + app.sellerboard.com (authorized session),Authorized read-only audit #2,2026-10-10,n/a,Sellerboard.io 13 sections; 27 formulas reconciled,High,Authorized interaction,No writes; figures not reproduced

@@ -1,0 +1,2947 @@
+{
+ "_meta": {
+  "cutoff": "2026-09-10",
+  "currency_note": "All amounts synthetic; INR unless stated; 2-dp half-even rounding at presentation only; internal arithmetic exact Decimal",
+  "status": "Expected values hand-computed by author and re-verified by reference_calcs.py; this is NOT a test of an application that has not yet been built",
+  "precision": "Storage NUMERIC(18,4); wire string decimal 4 dp; presentation ROUND_HALF_EVEN 2 dp; price floors ROUND_CEILING to minor unit",
+  "sign_convention": "P&L line inputs carry sign (costs negative) and are summed; register/expense inputs named *_expenses/ad_spend/indirect_alloc are positive magnitudes and are subtracted",
+  "v02": "GV-073..GV-141 added 2026-10-10 (formula audit #2, unified dashboard, B2B); GV-070 rewritten to documented break-even ACOS",
+  "v03": "GV-152..155 added 2026-10-10 (all marketplaces, channel fee mapping)"
+ },
+ "vectors": [
+  {
+   "id": "GV-001",
+   "calc": "CALC-001",
+   "name": "Gross sales, tax-inclusive market (IN)",
+   "input": {
+    "items": [
+     {
+      "price": 2499.0,
+      "qty": 2
+     },
+     {
+      "price": 799.0,
+      "qty": 1
+     }
+    ]
+   },
+   "expected": {
+    "gross_sales": 5797.0
+   }
+  },
+  {
+   "id": "GV-002",
+   "calc": "CALC-002",
+   "name": "Net sales with promo and product refund",
+   "input": {
+    "gross": 5797.0,
+    "promo": 300.0,
+    "refund_product": 799.0
+   },
+   "expected": {
+    "net_sales": 4698.0
+   }
+  },
+  {
+   "id": "GV-003",
+   "calc": "CALC-002",
+   "name": "Net sales tax-exclusive basis (UK, 20% VAT inclusive price)",
+   "input": {
+    "gross_incl": 120.0,
+    "vat_rate": 0.2,
+    "promo": 0,
+    "refund_product": 0,
+    "basis": "exclusive"
+   },
+   "expected": {
+    "net_sales": 100.0
+   }
+  },
+  {
+   "id": "GV-004",
+   "calc": "CALC-003",
+   "name": "Fee classification sum with known codes",
+   "input": {
+    "fees": [
+     {
+      "code": "Commission",
+      "amt": -374.85
+     },
+     {
+      "code": "FBAPerUnitFulfillmentFee",
+      "amt": -85.0
+     },
+     {
+      "code": "FixedClosingFee",
+      "amt": -25.0
+     },
+     {
+      "code": "TechnologyFee",
+      "amt": -2.0
+     }
+    ]
+   },
+   "expected": {
+    "fees_total": -486.85,
+    "unclassified": 0.0
+   }
+  },
+  {
+   "id": "GV-005",
+   "calc": "CALC-004",
+   "name": "Refund cost with fee reversal and admin fee",
+   "input": {
+    "refunded": 2499.0,
+    "fee_reversal": 337.37,
+    "refund_admin_fee": 37.48
+   },
+   "expected": {
+    "refund_cost": 2199.11
+   }
+  },
+  {
+   "id": "GV-006",
+   "calc": "CALC-005",
+   "name": "COGS by period: cost effective at order date",
+   "input": {
+    "periods": [
+     {
+      "from": "2026-01-01",
+      "cost": 900.0
+     },
+     {
+      "from": "2026-07-01",
+      "cost": 950.0
+     }
+    ],
+    "order_date": "2026-06-30",
+    "qty": 3
+   },
+   "expected": {
+    "cogs": 2700.0
+   }
+  },
+  {
+   "id": "GV-007",
+   "calc": "CALC-006",
+   "name": "Weighted average after two receipts",
+   "input": {
+    "receipts": [
+     {
+      "qty": 100,
+      "unit": 900.0
+     },
+     {
+      "qty": 50,
+      "unit": 990.0
+     }
+    ],
+    "qty": 10
+   },
+   "expected": {
+    "avg_unit": 930.0,
+    "cogs": 9300.0
+   }
+  },
+  {
+   "id": "GV-008",
+   "calc": "CALC-007",
+   "name": "FIFO across two batches, old sale not repriced by new batch",
+   "input": {
+    "batches": [
+     {
+      "received": "2026-05-01",
+      "qty": 5,
+      "unit": 900.0
+     },
+     {
+      "received": "2026-08-01",
+      "qty": 10,
+      "unit": 1000.0
+     }
+    ],
+    "order_date": "2026-06-15",
+    "qty": 3
+   },
+   "expected": {
+    "cogs": 2700.0,
+    "remaining_batch1": 2
+   }
+  },
+  {
+   "id": "GV-009",
+   "calc": "CALC-007",
+   "name": "FIFO oversold, policy last batch",
+   "input": {
+    "batches": [
+     {
+      "qty": 2,
+      "unit": 900.0
+     }
+    ],
+    "qty": 5,
+    "oversold_policy": "last_batch"
+   },
+   "expected": {
+    "cogs": 4500.0,
+    "oversold_units": 3,
+    "alert": "FIFO_OVERSOLD"
+   }
+  },
+  {
+   "id": "GV-010",
+   "calc": "CALC-007",
+   "name": "FIFO oversold, policy zero",
+   "input": {
+    "batches": [
+     {
+      "qty": 2,
+      "unit": 900.0
+     }
+    ],
+    "qty": 5,
+    "oversold_policy": "zero"
+   },
+   "expected": {
+    "cogs": 1800.0,
+    "oversold_units": 3,
+    "alert": "FIFO_OVERSOLD"
+   }
+  },
+  {
+   "id": "GV-011",
+   "calc": "CALC-003",
+   "name": "Unknown fee code goes to Unclassified, not dropped",
+   "input": {
+    "fees": [
+     {
+      "code": "Commission",
+      "amt": -100.0
+     },
+     {
+      "code": "NewMysteryFee2026",
+      "amt": -7.5
+     }
+    ]
+   },
+   "expected": {
+    "fees_total": -107.5,
+    "unclassified": -7.5,
+    "alert": "UNKNOWN_FEE_CODE"
+   }
+  },
+  {
+   "id": "GV-012",
+   "calc": "CALC-008",
+   "name": "Landed cost per unit",
+   "input": {
+    "purchase": 90000.0,
+    "freight": 6000.0,
+    "duty": 4500.0,
+    "insurance": 500.0,
+    "units": 100
+   },
+   "expected": {
+    "landed_unit": 1010.0
+   }
+  },
+  {
+   "id": "GV-013",
+   "calc": "CALC-008",
+   "name": "Duty in COGS excludes duty from expenses (no double count)",
+   "input": {
+    "landed_unit": 1010.0,
+    "qty": 10,
+    "duty_expense_also_booked": 4500.0,
+    "policy": "in_cogs"
+   },
+   "expected": {
+    "cogs": 10100.0,
+    "expense_duty": 0.0
+   }
+  },
+  {
+   "id": "GV-014",
+   "calc": "CALC-010",
+   "name": "Product gross profit (inputs are independent lines: the 799 refunded principal in GV-002 and the refund cost in GV-005 belong to different orders; see GV-143 for the single-count rule)",
+   "input": {
+    "net_sales": 4698.0,
+    "fees": -486.85,
+    "refund_cost": -2199.11,
+    "cogs": -2700.0,
+    "shipping": 0,
+    "payment_fees": 0
+   },
+   "expected": {
+    "gross_profit": -687.96
+   }
+  },
+  {
+   "id": "GV-015",
+   "calc": "CALC-013",
+   "name": "Management net profit chain",
+   "input": {
+    "gross_profit": 150000.0,
+    "variable_expenses": 5000.0,
+    "ad_spend": 32000.0,
+    "indirect_alloc": 18000.0
+   },
+   "expected": {
+    "contribution_before_ads": 145000.0,
+    "contribution_after_ads": 113000.0,
+    "net_profit": 95000.0
+   }
+  },
+  {
+   "id": "GV-016",
+   "calc": "CALC-009",
+   "name": "Unsellable return: COGS not restored",
+   "input": {
+    "return_condition": "UNSELLABLE",
+    "unit_cogs": 900.0,
+    "qty": 1,
+    "disposal": 20.0
+   },
+   "expected": {
+    "cogs_restored": 0.0,
+    "unsellable_cost": 920.0,
+    "saleable_inventory_delta": 0
+   }
+  },
+  {
+   "id": "GV-017",
+   "calc": "CALC-014",
+   "name": "Aggregate margin is ratio of sums, not mean of margins",
+   "input": {
+    "rows": [
+     {
+      "profit": 10,
+      "sales": 100
+     },
+     {
+      "profit": 900,
+      "sales": 1000
+     }
+    ]
+   },
+   "expected": {
+    "margin": 0.8273,
+    "mean_of_row_margins_WRONG": 0.5
+   }
+  },
+  {
+   "id": "GV-018",
+   "calc": "CALC-005",
+   "name": "Missing COGS -> null and incomplete flag, not zero",
+   "input": {
+    "cost": null,
+    "qty": 4
+   },
+   "expected": {
+    "cogs": null,
+    "flag": "COGS_MISSING"
+   }
+  },
+  {
+   "id": "GV-019",
+   "calc": "CALC-014",
+   "name": "Zero sales denominator -> null margin",
+   "input": {
+    "profit": -50.0,
+    "sales": 0
+   },
+   "expected": {
+    "margin": null
+   }
+  },
+  {
+   "id": "GV-020",
+   "calc": "CALC-022",
+   "name": "Estimated gateway fee replaced by actual",
+   "input": {
+    "amount": 2499.0,
+    "rate": 0.02,
+    "fixed": 3.0,
+    "actual": 52.0
+   },
+   "expected": {
+    "estimate": 52.98,
+    "applied": 52.0,
+    "source": "actual"
+   }
+  },
+  {
+   "id": "GV-021",
+   "calc": "CALC-022",
+   "name": "Estimate applied when no actual yet",
+   "input": {
+    "amount": 2499.0,
+    "rate": 0.02,
+    "fixed": 3.0,
+    "actual": null
+   },
+   "expected": {
+    "estimate": 52.98,
+    "applied": 52.98,
+    "source": "estimate"
+   }
+  },
+  {
+   "id": "GV-022",
+   "calc": "CALC-020",
+   "name": "Mixed order shipping: highest policy",
+   "input": {
+    "item_costs": [
+     60.0,
+     40.0,
+     40.0
+    ],
+    "policy": "highest"
+   },
+   "expected": {
+    "shipping": 60.0
+   }
+  },
+  {
+   "id": "GV-023",
+   "calc": "CALC-020",
+   "name": "Mixed order shipping: sum policy",
+   "input": {
+    "item_costs": [
+     60.0,
+     40.0,
+     40.0
+    ],
+    "policy": "sum"
+   },
+   "expected": {
+    "shipping": 140.0
+   }
+  },
+  {
+   "id": "GV-024",
+   "calc": "CALC-021",
+   "name": "Pick & pack with first-X rate",
+   "input": {
+    "per_order": 10.0,
+    "per_item": 4.0,
+    "first_x": 2,
+    "first_x_rate": 6.0,
+    "items": 5
+   },
+   "expected": {
+    "pick_pack": 34.0
+   }
+  },
+  {
+   "id": "GV-025",
+   "calc": "CALC-024",
+   "name": "Late correction after period close posts to open period",
+   "input": {
+    "closed_period": "2026-07",
+    "correction_date": "2026-08-05",
+    "amount": -1500.0,
+    "original_period": "2026-07"
+   },
+   "expected": {
+    "posted_period": "2026-08",
+    "closed_period_delta": 0.0,
+    "lineage": "ORIGINAL:2026-07"
+   }
+  },
+  {
+   "id": "GV-026",
+   "calc": "CALC-024",
+   "name": "Daily amortization of monthly storage fee",
+   "input": {
+    "fee": 3100.0,
+    "days_in_month": 31,
+    "day_count": 10
+   },
+   "expected": {
+    "amortized": 1000.0
+   }
+  },
+  {
+   "id": "GV-027",
+   "calc": "CALC-023",
+   "name": "Allocation conservation with rounding remainder",
+   "input": {
+    "total": 100.0,
+    "weights": [
+     1,
+     1,
+     1
+    ]
+   },
+   "expected": {
+    "allocations": [
+     33.34,
+     33.33,
+     33.33
+    ],
+    "sum": 100.0
+   }
+  },
+  {
+   "id": "GV-028",
+   "calc": "CALC-025",
+   "name": "GST recoverable on fees (18%) reduces fee cost",
+   "input": {
+    "fee_incl": 118.0,
+    "gst_rate": 0.18,
+    "recoverable": true
+   },
+   "expected": {
+    "fee_cost": 100.0,
+    "gst_credit": 18.0
+   }
+  },
+  {
+   "id": "GV-029",
+   "calc": "CALC-025",
+   "name": "TCS treated as recoverable -> not a cost",
+   "input": {
+    "tcs": 25.0,
+    "recoverable": true
+   },
+   "expected": {
+    "tcs_cost": 0.0,
+    "tcs_asset": 25.0
+   }
+  },
+  {
+   "id": "GV-030",
+   "calc": "CALC-002",
+   "name": "Attributed conversions never added to sales",
+   "input": {
+    "business_sales": 100000.0,
+    "meta_attributed": 40000.0,
+    "klaviyo_attributed": 15000.0
+   },
+   "expected": {
+    "sales": 100000.0
+   }
+  },
+  {
+   "id": "GV-031",
+   "calc": "CALC-047",
+   "name": "Shopify order + MCF record = one sale",
+   "input": {
+    "shopify_order": {
+     "id": "SO-1",
+     "sales": 2499.0
+    },
+    "mcf_record": {
+     "shopify_ref": "SO-1",
+     "sales": 2499.0,
+     "fulfillment_fee": -95.0
+    }
+   },
+   "expected": {
+    "sales": 2499.0,
+    "fulfillment_fees": -95.0,
+    "orders": 1
+   }
+  },
+  {
+   "id": "GV-032",
+   "calc": "CALC-047",
+   "name": "Ignore multi-channel on Amazon channel view keeps MCF fee in P&L",
+   "input": {
+    "channel_view": "amazon",
+    "mcf_orders": [
+     {
+      "sales": 2499.0,
+      "fee": -95.0
+     }
+    ],
+    "ignore_multichannel": true
+   },
+   "expected": {
+    "amazon_sales_shown": 0.0,
+    "mcf_fee_in_total_pnl": -95.0
+   }
+  },
+  {
+   "id": "GV-033",
+   "calc": "CALC-026",
+   "name": "FX by order date policy",
+   "input": {
+    "amount_gbp": 100.0,
+    "rates": {
+     "2026-06-01": 105.5,
+     "2026-06-15": 106.2
+    },
+    "order_date": "2026-06-01",
+    "posted_date": "2026-06-15",
+    "policy": "order"
+   },
+   "expected": {
+    "inr": 10550.0
+   }
+  },
+  {
+   "id": "GV-034",
+   "calc": "CALC-027",
+   "name": "Settlement bridge variance",
+   "input": {
+    "events_sum": 48230.55,
+    "payout": 48200.0
+   },
+   "expected": {
+    "variance": 30.55,
+    "status": "UNRECONCILED"
+   }
+  },
+  {
+   "id": "GV-035",
+   "calc": "CALC-033",
+   "name": "Single-day cohort 30 days old cannot claim 365-day LTV (age measured from cohort_end)",
+   "input": {
+    "cohort_start": "2026-08-11",
+    "cohort_end": "2026-08-11",
+    "as_of": "2026-09-10",
+    "window_days": 365,
+    "cum_sales_per_buyer": 3121.0
+   },
+   "expected": {
+    "ltv_365": null,
+    "maturity": "IMMATURE",
+    "ltv_30": 3121.0
+   }
+  },
+  {
+   "id": "GV-036",
+   "calc": "CALC-033",
+   "name": "No cross-market identity: same email in IN and UK stays two buyers",
+   "input": {
+    "buyers": [
+     {
+      "market": "IN",
+      "email_hash": "h1"
+     },
+     {
+      "market": "UK",
+      "email_hash": "h1"
+     }
+    ]
+   },
+   "expected": {
+    "buyer_count": 2
+   }
+  },
+  {
+   "id": "GV-037",
+   "calc": "CALC-035",
+   "name": "Repeat orders are not subscriptions",
+   "input": {
+    "orders": [
+     {
+      "buyer": "b1",
+      "date": "2026-01-10"
+     },
+     {
+      "buyer": "b1",
+      "date": "2026-02-10"
+     },
+     {
+      "buyer": "b1",
+      "date": "2026-03-10"
+     }
+    ],
+    "contract_source": null
+   },
+   "expected": {
+    "repeat_buyer": true,
+    "subscription": false,
+    "label": "REPEAT_ORDERS"
+   }
+  },
+  {
+   "id": "GV-038",
+   "calc": "CALC-039",
+   "name": "Reorder quantity rounded up to carton",
+   "input": {
+    "velocity": 14.3,
+    "lead_days": 30,
+    "cover_days": 45,
+    "safety": 50,
+    "available": 190,
+    "inbound": 0,
+    "carton": 24
+   },
+   "expected": {
+    "raw": 932.5,
+    "reorder_qty": 936
+   }
+  },
+  {
+   "id": "GV-039",
+   "calc": "CALC-038",
+   "name": "Days of cover with zero velocity -> null",
+   "input": {
+    "available": 100,
+    "velocity": 0
+   },
+   "expected": {
+    "days_of_cover": null
+   }
+  },
+  {
+   "id": "GV-040",
+   "calc": "CALC-041",
+   "name": "Min price never rounds below floor",
+   "input": {
+    "cogs": 900.0,
+    "fixed_fees": 110.0,
+    "referral_pct": 0.15,
+    "profit_floor": 100.0
+   },
+   "expected": {
+    "exact_floor": 1305.882353,
+    "min_price": 1305.89
+   }
+  },
+  {
+   "id": "GV-041",
+   "calc": "CALC-041",
+   "name": "Override cannot bypass hard floor",
+   "input": {
+    "min_price": 1305.89,
+    "override_request": 1200.0,
+    "hard_floor": 1305.89
+   },
+   "expected": {
+    "applied_min": 1305.89,
+    "rejected": true
+   }
+  },
+  {
+   "id": "GV-042",
+   "calc": "CALC-042",
+   "name": "Review request eligibility window",
+   "input": {
+    "delivered": "2026-09-01",
+    "as_of": "2026-09-10",
+    "prior_request": false,
+    "excluded": false
+   },
+   "expected": {
+    "eligible": true,
+    "window": "2026-09-06..2026-10-01"
+   }
+  },
+  {
+   "id": "GV-043",
+   "calc": "CALC-042",
+   "name": "Second request for same order blocked",
+   "input": {
+    "delivered": "2026-09-01",
+    "as_of": "2026-09-10",
+    "prior_request": true,
+    "excluded": false
+   },
+   "expected": {
+    "eligible": false,
+    "reason": "ALREADY_REQUESTED"
+   }
+  },
+  {
+   "id": "GV-044",
+   "calc": "CALC-043",
+   "name": "Alert dedup within TTL",
+   "input": {
+    "alerts": [
+     {
+      "type": "OOS_SOON",
+      "sku": "X",
+      "ts": "2026-09-10T01:00Z"
+     },
+     {
+      "type": "OOS_SOON",
+      "sku": "X",
+      "ts": "2026-09-10T05:00Z"
+     }
+    ],
+    "ttl_hours": 24
+   },
+   "expected": {
+    "emitted": 1
+   }
+  },
+  {
+   "id": "GV-045",
+   "calc": "CALC-045",
+   "name": "Run-rate forecast",
+   "input": {
+    "mtd_sales": 1496620.7,
+    "elapsed_days": 10,
+    "days_in_month": 30
+   },
+   "expected": {
+    "forecast": 4489862.1
+   }
+  },
+  {
+   "id": "GV-046",
+   "calc": "CALC-013",
+   "name": "Source failure -> stale, not zero",
+   "input": {
+    "last_sync": "2026-09-08T00:00Z",
+    "as_of": "2026-09-10T00:00Z",
+    "max_age_hours": 24,
+    "sales_cached": 66661.0
+   },
+   "expected": {
+    "status": "STALE",
+    "sales": 66661.0,
+    "treated_as_zero": false
+   }
+  },
+  {
+   "id": "GV-047",
+   "calc": "CALC-031",
+   "name": "Real ACOS product-scoped",
+   "input": {
+    "product_ad_spend": 4361.74,
+    "product_total_sales": 66661.0
+   },
+   "expected": {
+    "real_acos": 0.0654
+   }
+  },
+  {
+   "id": "GV-048",
+   "calc": "CALC-030",
+   "name": "TACOS zero sales -> null",
+   "input": {
+    "ad_spend": 100.0,
+    "total_sales": 0
+   },
+   "expected": {
+    "tacos": null
+   }
+  },
+  {
+   "id": "GV-049",
+   "calc": "CALC-032",
+   "name": "Attribution overlap counted once",
+   "input": {
+    "order": "O1",
+    "attributions": [
+     "utm",
+     "cookie",
+     "shopify_journey"
+    ]
+   },
+   "expected": {
+    "attributed_orders": 1,
+    "model_views": {
+     "utm": 1,
+     "cookie": 1,
+     "shopify_journey": 1
+    }
+   }
+  },
+  {
+   "id": "GV-050",
+   "calc": "CALC-044",
+   "name": "Claim realization partial",
+   "input": {
+    "candidate": 66690.0,
+    "realized": [
+     {
+      "amt": 40000.0
+     },
+     {
+      "amt": 5000.0
+     }
+    ]
+   },
+   "expected": {
+    "realized_total": 45000.0,
+    "open": 21690.0,
+    "rate": 0.6748
+   }
+  },
+  {
+   "id": "GV-051",
+   "calc": "CALC-046",
+   "name": "TCO arithmetic (synthetic illustration; NOT the file-06 figure) = labour+contingency+one-time + opex\u00d7months",
+   "input": {
+    "labour": 150,
+    "contingency": 30,
+    "one_time": 6.5,
+    "opex_monthly": 4.5,
+    "months": 12
+   },
+   "expected": {
+    "tco_12": 240.5
+   }
+  },
+  {
+   "id": "GV-052",
+   "calc": "CALC-040",
+   "name": "Inventory movement reconciliation mismatch",
+   "input": {
+    "open": 100,
+    "received": 50,
+    "shipped": 120,
+    "removed": 5,
+    "adjust": 0,
+    "close_reported": 30
+   },
+   "expected": {
+    "close_calc": 25,
+    "variance": 5,
+    "status": "SHRINKAGE_OR_ERROR"
+   }
+  },
+  {
+   "id": "GV-053",
+   "calc": "CALC-015",
+   "name": "ROI on COGS",
+   "input": {
+    "net_profit": 95000.0,
+    "cogs": 380000.0
+   },
+   "expected": {
+    "roi": 0.25
+   }
+  },
+  {
+   "id": "GV-054",
+   "calc": "CALC-015",
+   "name": "ROI with zero COGS -> null",
+   "input": {
+    "net_profit": 100.0,
+    "cogs": 0
+   },
+   "expected": {
+    "roi": null
+   }
+  },
+  {
+   "id": "GV-055",
+   "calc": "CALC-016",
+   "name": "ASP excludes refunded units",
+   "input": {
+    "revenue": 24990.0,
+    "units_sold": 10,
+    "units_refunded": 2
+   },
+   "expected": {
+    "asp": 3123.75
+   }
+  },
+  {
+   "id": "GV-056",
+   "calc": "CALC-017",
+   "name": "AOV",
+   "input": {
+    "gross_sales": 157025.5,
+    "orders": 55
+   },
+   "expected": {
+    "aov": 2855.01
+   }
+  },
+  {
+   "id": "GV-057",
+   "calc": "CALC-018",
+   "name": "Unit session percentage",
+   "input": {
+    "units": 524,
+    "sessions": 18706
+   },
+   "expected": {
+    "usp": 0.028
+   }
+  },
+  {
+   "id": "GV-058",
+   "calc": "CALC-019",
+   "name": "Return rate",
+   "input": {
+    "refunded_units": 69,
+    "shipped_units": 524
+   },
+   "expected": {
+    "return_rate": 0.1317
+   }
+  },
+  {
+   "id": "GV-059",
+   "calc": "CALC-028",
+   "name": "ROAS",
+   "input": {
+    "ad_sales": 2990255.68,
+    "spend": 633167.86
+   },
+   "expected": {
+    "roas": 4.7227
+   }
+  },
+  {
+   "id": "GV-060",
+   "calc": "CALC-029",
+   "name": "ACOS with zero ad sales -> null",
+   "input": {
+    "ad_sales": 0,
+    "spend": 500.0
+   },
+   "expected": {
+    "acos": null
+   }
+  },
+  {
+   "id": "GV-061",
+   "calc": "CALC-034",
+   "name": "CAC",
+   "input": {
+    "acquisition_spend": 120000.0,
+    "new_customers": 400
+   },
+   "expected": {
+    "cac": 300.0
+   }
+  },
+  {
+   "id": "GV-062",
+   "calc": "CALC-036",
+   "name": "Payback month (first month cumulative contribution >= CAC)",
+   "input": {
+    "cac": 300.0,
+    "monthly_contribution": [
+     90.0,
+     90.0,
+     90.0,
+     90.0
+    ]
+   },
+   "expected": {
+    "payback_month": 4
+   }
+  },
+  {
+   "id": "GV-063",
+   "calc": "CALC-037",
+   "name": "Sales velocity over window",
+   "input": {
+    "units": 429,
+    "days": 30
+   },
+   "expected": {
+    "velocity": 14.3
+   }
+  },
+  {
+   "id": "GV-064",
+   "calc": "CALC-048",
+   "name": "Estimated payout flagged as estimate",
+   "input": {
+    "gross_sales": 100000.0,
+    "promo": 0,
+    "fees": -25000.0,
+    "refund_cost": -4000.0,
+    "tcs": 0,
+    "reserve_delta": 3000.0,
+    "reimbursements": 0
+   },
+   "expected": {
+    "est_payout": 68000.0,
+    "status": "ESTIMATE"
+   }
+  },
+  {
+   "id": "GV-065",
+   "calc": "CALC-036",
+   "name": "Payback never reached within horizon -> null",
+   "input": {
+    "cac": 300.0,
+    "monthly_contribution": [
+     50.0,
+     50.0,
+     50.0
+    ]
+   },
+   "expected": {
+    "payback_month": null
+   }
+  },
+  {
+   "id": "GV-066",
+   "calc": "CALC-011",
+   "name": "Contribution before advertising",
+   "input": {
+    "gross_profit": 150000.0,
+    "variable_expenses": 5000.0
+   },
+   "expected": {
+    "contribution_before_ads": 145000.0
+   }
+  },
+  {
+   "id": "GV-067",
+   "calc": "CALC-012",
+   "name": "Contribution after advertising",
+   "input": {
+    "contribution_before_ads": 145000.0,
+    "ad_spend": 32000.0
+   },
+   "expected": {
+    "contribution_after_ads": 113000.0
+   }
+  },
+  {
+   "id": "GV-068",
+   "calc": "CALC-015",
+   "name": "ROI with P&L-signed (negative) COGS uses absolute value",
+   "input": {
+    "net_profit": 95000.0,
+    "cogs": -380000.0
+   },
+   "expected": {
+    "roi": 0.25
+   }
+  },
+  {
+   "id": "GV-069",
+   "calc": "CALC-005",
+   "name": "Percentage COGS variant",
+   "input": {
+    "net_sales_item": 2499.0,
+    "pct": 0.36
+   },
+   "expected": {
+    "cogs": 899.64
+   }
+  },
+  {
+   "id": "GV-070",
+   "calc": "CALC-049",
+   "name": "Break-even ACOS (documented formula: (PPC profit + ad spend) / PPC sales)",
+   "input": {
+    "ppc_profit": 7000.0,
+    "ad_spend": 63000.0,
+    "ppc_sales": 240000.0
+   },
+   "expected": {
+    "be_acos": 0.2917
+   }
+  },
+  {
+   "id": "GV-071",
+   "calc": "CALC-036",
+   "name": "Zero CAC -> payback 0 flagged",
+   "input": {
+    "cac": 0,
+    "monthly_contribution": [
+     10.0
+    ]
+   },
+   "expected": {
+    "payback_month": 0,
+    "flag": "ZERO_CAC"
+   }
+  },
+  {
+   "id": "GV-072",
+   "calc": "CALC-007",
+   "name": "FIFO oversold with no batch ever and last_batch policy -> COGS_MISSING",
+   "input": {
+    "batches": [],
+    "qty": 3,
+    "oversold_policy": "last_batch"
+   },
+   "expected": {
+    "cogs": null,
+    "oversold_units": 3,
+    "alert": "COGS_MISSING"
+   }
+  },
+  {
+   "id": "GV-073",
+   "calc": "CALC-050",
+   "name": "Amazon Sellerboard-compatible gross profit stack (signed sum) (refund_cost is ex-tax; refunded tax is already netted inside output_tax)",
+   "input": {
+    "sales": 100000.0,
+    "promo": -2000.0,
+    "advertising": -12000.0,
+    "shipping": -500.0,
+    "giftwrap": 0.0,
+    "refund_cost": -3000.0,
+    "amazon_fees": -25000.0,
+    "cogs": -35000.0,
+    "output_tax": -15254.24
+   },
+   "expected": {
+    "gross_profit": 7245.76
+   }
+  },
+  {
+   "id": "GV-074",
+   "calc": "CALC-051",
+   "name": "Compat net profit equals contribution-margin net profit on identical inputs",
+   "input": {
+    "sales": 100000.0,
+    "promo": -2000.0,
+    "advertising": -12000.0,
+    "shipping": -500.0,
+    "giftwrap": 0.0,
+    "refund_cost": -3000.0,
+    "amazon_fees": -25000.0,
+    "cogs": -35000.0,
+    "output_tax": -15254.24,
+    "indirect": -5000.0
+   },
+   "expected": {
+    "np_compat": 2245.76,
+    "np_cm": 2245.76,
+    "equal": true
+   }
+  },
+  {
+   "id": "GV-075",
+   "calc": "CALC-050",
+   "name": "Shopify Sellerboard-compatible gross profit stack",
+   "input": {
+    "sales": 50000.0,
+    "advertising": -8000.0,
+    "shipping_costs": -1200.0,
+    "pick_pack": -300.0,
+    "payment_fees": -1000.0,
+    "cogs": -20000.0,
+    "tax": -7627.12,
+    "chargebacks": -500.0
+   },
+   "expected": {
+    "gross_profit": 11372.88
+   }
+  },
+  {
+   "id": "GV-076",
+   "calc": "CALC-052",
+   "name": "Output tax from GST-inclusive intra-state sales with CGST/SGST completeness check",
+   "input": {
+    "sales_incl": 11800.0,
+    "rate": 0.18,
+    "intra_state": true,
+    "observed": {
+     "cgst": 900.0,
+     "sgst": 0.0
+    }
+   },
+   "expected": {
+    "expected_tax": 1800.0,
+    "cgst": 900.0,
+    "sgst": 900.0,
+    "observed_tax": 900.0,
+    "flags": [
+     "CGST_SGST_MISMATCH",
+     "TAX_LINE_INCOMPLETE"
+    ]
+   }
+  },
+  {
+   "id": "GV-077",
+   "calc": "CALC-053",
+   "name": "% Refunds on units basis",
+   "input": {
+    "returned_units": 4,
+    "units_sold": 244
+   },
+   "expected": {
+    "pct_refunds": 0.0164
+   }
+  },
+  {
+   "id": "GV-078",
+   "calc": "CALC-054",
+   "name": "Sellable returns %",
+   "input": {
+    "sellable_returned": 3,
+    "returned": 4
+   },
+   "expected": {
+    "sellable_pct": 0.75
+   }
+  },
+  {
+   "id": "GV-079",
+   "calc": "CALC-055",
+   "name": "PPC profit with previous-month per-order estimates",
+   "input": {
+    "ppc_sales": 50000.0,
+    "ppc_orders": 20,
+    "prev_avg_promo": -20.0,
+    "prev_avg_refund": -150.0,
+    "prev_avg_fees": -600.0,
+    "cogs": -18000.0,
+    "output_tax": -7627.12,
+    "expenses": 0.0,
+    "advertising": -10000.0
+   },
+   "expected": {
+    "ppc_profit": -1027.12
+   }
+  },
+  {
+   "id": "GV-080",
+   "calc": "CALC-056",
+   "name": "Ad unit metrics",
+   "input": {
+    "spend": 1000.0,
+    "clicks": 125,
+    "impressions": 10000,
+    "orders": 5,
+    "daily_budget": 100.0,
+    "days": 14
+   },
+   "expected": {
+    "cpc": 8.0,
+    "ctr": 0.0125,
+    "cpm": 100.0,
+    "cpo": 200.0,
+    "cvr": 0.04,
+    "budget_utilisation": 0.7143
+   }
+  },
+  {
+   "id": "GV-081",
+   "calc": "CALC-057",
+   "name": "Break-even bid",
+   "input": {
+    "be_acos": 0.29,
+    "acos": 0.2579,
+    "cpc": 8.81
+   },
+   "expected": {
+    "be_bid": 9.91
+   }
+  },
+  {
+   "id": "GV-082",
+   "calc": "CALC-058",
+   "name": "Day-parting bid capped at max bid",
+   "input": {
+    "base": 10.0,
+    "multipliers": [
+     1.8,
+     0.5
+    ],
+    "max_bid": 15.0
+   },
+   "expected": {
+    "bids": [
+     15.0,
+     5.0
+    ]
+   }
+  },
+  {
+   "id": "GV-083",
+   "calc": "CALC-059",
+   "name": "Blended ROAS and POAS",
+   "input": {
+    "sales": 812000.0,
+    "ad_spend": 175000.0,
+    "net_profit": -135000.0
+   },
+   "expected": {
+    "blended_roas": 4.64,
+    "poas": -0.7714
+   }
+  },
+  {
+   "id": "GV-084",
+   "calc": "CALC-060",
+   "name": "Amazon Attribution campaign profit and ROAS",
+   "input": {
+    "attributed_sales": 20000.0,
+    "spend": 4000.0,
+    "cogs": 7000.0,
+    "fees": 3000.0,
+    "output_tax": 3050.85
+   },
+   "expected": {
+    "profit": 2949.15,
+    "roas": 5.0
+   }
+  },
+  {
+   "id": "GV-085",
+   "calc": "CALC-062",
+   "name": "Days until next order \u2014 Sellerboard-compatible default (days of cover \u2212 lead-time components)",
+   "input": {
+    "available": 100,
+    "reserved": 20,
+    "incoming": 200,
+    "ordered": 0,
+    "velocity": 4,
+    "mfg": 30,
+    "ship": 10,
+    "buffer": 5
+   },
+   "expected": {
+    "days_until_next_order": -15
+   }
+  },
+  {
+   "id": "GV-086",
+   "calc": "CALC-063",
+   "name": "Stock value, potential sales, potential profit",
+   "input": {
+    "units": 500,
+    "unit_cogs": 400.0,
+    "price": 1000.0,
+    "profit_per_unit": 150.0
+   },
+   "expected": {
+    "stock_value": 200000.0,
+    "potential_sales": 500000.0,
+    "potential_profit": 75000.0
+   }
+  },
+  {
+   "id": "GV-087",
+   "calc": "CALC-064",
+   "name": "Funds needed and sales/profit at risk (proposed)",
+   "input": {
+    "reorder_qty": 300,
+    "unit_cost": 400.0,
+    "velocity": 10,
+    "price": 1000.0,
+    "profit_per_unit": 150.0,
+    "lead_days": 45,
+    "days_of_stock": 30
+   },
+   "expected": {
+    "funds_needed": 120000.0,
+    "sales_at_risk": 150000.0,
+    "profit_at_risk": 22500.0
+   }
+  },
+  {
+   "id": "GV-088",
+   "calc": "CALC-065",
+   "name": "Missed profit from stockout",
+   "input": {
+    "oos_days": 12,
+    "velocity": 5,
+    "avg_profit_per_unit": 150.0
+   },
+   "expected": {
+    "missed_profit": 9000.0
+   }
+  },
+  {
+   "id": "GV-089",
+   "calc": "CALC-066",
+   "name": "Profit per unit estimate",
+   "input": {
+    "price": 1180.0,
+    "tax_rate": 0.18,
+    "cogs": 400.0,
+    "fulfilment_fee": 85.0,
+    "referral_fee": 118.0,
+    "shipping_per_unit": 0.0
+   },
+   "expected": {
+    "profit_per_unit": 397.0
+   }
+  },
+  {
+   "id": "GV-090",
+   "calc": "CALC-076",
+   "name": "Shopify revenue composition: tips memo-only, gift cards deferred, chargebacks cost",
+   "input": {
+    "gross_product_sales": 10000.0,
+    "discounts": 1000.0,
+    "shipping_charged": 200.0,
+    "refunded": 500.0,
+    "tips": 100.0,
+    "gift_card_sales": 2000.0,
+    "chargebacks": 300.0
+   },
+   "expected": {
+    "sales": 8700.0,
+    "tips_memo": 100.0,
+    "gift_card_deferred": 2000.0,
+    "chargeback_cost": -300.0
+   }
+  },
+  {
+   "id": "GV-091",
+   "calc": "CALC-067",
+   "name": "Inbound fee allocated by volume with conservation",
+   "input": {
+    "fee": 1000.0,
+    "volumes": [
+     2,
+     3,
+     5
+    ]
+   },
+   "expected": {
+    "allocations": [
+     200.0,
+     300.0,
+     500.0
+    ],
+    "unallocated": 0.0
+   }
+  },
+  {
+   "id": "GV-092",
+   "calc": "CALC-068",
+   "name": "Reimbursement gap",
+   "input": {
+    "unit_cogs": 1000.0,
+    "reimbursement_per_unit": 700.0,
+    "units": 3
+   },
+   "expected": {
+    "gap": 900.0
+   }
+  },
+  {
+   "id": "GV-093",
+   "calc": "CALC-061",
+   "name": "Dual attribution never summed; unattributed bucket; new-customer rate",
+   "input": {
+    "business_sales": 800000.0,
+    "attributed_sales": 250000.0,
+    "platform_reported_sales": 3000000.0,
+    "attributed_orders": 42,
+    "new_customer_orders": 30
+   },
+   "expected": {
+    "sales": 800000.0,
+    "unattributed": 550000.0,
+    "ncr": 0.7143,
+    "platform_reported_shown": 3000000.0
+   }
+  },
+  {
+   "id": "GV-094",
+   "calc": "CALC-069",
+   "name": "FBA fee overcharge above tolerance",
+   "input": {
+    "cases": [
+     {
+      "new_fee": 120.0,
+      "ref_fee": 100.0,
+      "units": 50
+     },
+     {
+      "new_fee": 100.5,
+      "ref_fee": 100.0,
+      "units": 50
+     }
+    ],
+    "tolerance": 1.0
+   },
+   "expected": {
+    "overcharges": [
+     1000.0,
+     0.0
+    ]
+   }
+  },
+  {
+   "id": "GV-095",
+   "calc": "CALC-070",
+   "name": "Refund-without-return candidate window",
+   "input": {
+    "refund_date": "2026-07-01",
+    "as_of": "2026-08-20",
+    "policy_days": 45,
+    "lookback_days": 105,
+    "return_received": false,
+    "reimbursed": false,
+    "amount": 2499.0
+   },
+   "expected": {
+    "candidate": true,
+    "amount": 2499.0
+   }
+  },
+  {
+   "id": "GV-096",
+   "calc": "CALC-071",
+   "name": "Lost/damaged candidate at COGS (proposed basis)",
+   "input": {
+    "lost": 5,
+    "damaged": 2,
+    "found": 1,
+    "reimbursed": 3,
+    "unit_cogs": 400.0
+   },
+   "expected": {
+    "units": 3,
+    "value": 1200.0
+   }
+  },
+  {
+   "id": "GV-097",
+   "calc": "CALC-072",
+   "name": "SnS revenue penetration",
+   "input": {
+    "sns_sales": 15000.0,
+    "total_sales": 300000.0
+   },
+   "expected": {
+    "penetration": 0.05
+   }
+  },
+  {
+   "id": "GV-098",
+   "calc": "CALC-073",
+   "name": "Cashflow running balance and 3-period forecast",
+   "input": {
+    "cash_prev": 100000.0,
+    "payouts": 50000.0,
+    "investments": 0.0,
+    "expenses": 20000.0,
+    "goods": 25000.0,
+    "dividends": 0.0,
+    "last3_net": [
+     5000.0,
+     8000.0,
+     2000.0
+    ]
+   },
+   "expected": {
+    "cash": 105000.0,
+    "forecast_next": 5000.0
+   }
+  },
+  {
+   "id": "GV-099",
+   "calc": "CALC-074",
+   "name": "Search-term share",
+   "input": {
+    "my": 120,
+    "total": 2400
+   },
+   "expected": {
+    "share": 0.05
+   }
+  },
+  {
+   "id": "GV-100",
+   "calc": "CALC-075",
+   "name": "Repricer guardrail envelope (within and conflicting cases)",
+   "input": {
+    "cases": [
+     {
+      "max_price": 2000.0,
+      "cpt": 1900.0,
+      "median90": 1400.0,
+      "initial": 1200.0,
+      "was_price": 1500.0,
+      "floor": 1305.89
+     },
+     {
+      "max_price": 2000.0,
+      "cpt": 1900.0,
+      "median90": 1400.0,
+      "initial": 1200.0,
+      "was_price": 1500.0,
+      "floor": 1800.0
+     }
+    ]
+   },
+   "expected": {
+    "results": [
+     {
+      "lower": 1305.89,
+      "upper": 1750.0,
+      "action": "REPRICE"
+     },
+     {
+      "lower": 1800.0,
+      "upper": 1750.0,
+      "action": "HOLD_ALERT"
+     }
+    ]
+   }
+  },
+  {
+   "id": "GV-101",
+   "calc": "CALC-077",
+   "name": "Return shipping, return processing and country surcharge",
+   "input": {
+    "returned_items": 3,
+    "return_ship_per_item": 60.0,
+    "packages": 2,
+    "proc_per_package": 20.0,
+    "proc_per_item": 5.0,
+    "country": "DE",
+    "surcharges": {
+     "DE": 150.0
+    }
+   },
+   "expected": {
+    "return_shipping": 180.0,
+    "return_processing": 55.0,
+    "surcharge": 150.0
+   }
+  },
+  {
+   "id": "GV-102",
+   "calc": "CALC-078",
+   "name": "Tiered COGS and %-of-price basis",
+   "input": {
+    "tiers": [
+     [
+      1,
+      500.0
+     ],
+     [
+      10,
+      450.0
+     ],
+     [
+      50,
+      400.0
+     ]
+    ],
+    "qty": 12,
+    "pct": 0.4,
+    "list_price": 1000.0,
+    "selling_price": 1000.0,
+    "shipping": 50.0,
+    "promo": 100.0
+   },
+   "expected": {
+    "tiered_cogs": 5400.0,
+    "pct_list": 400.0,
+    "pct_selling": 380.0
+   }
+  },
+  {
+   "id": "GV-103",
+   "calc": "CALC-079",
+   "name": "Advertising cost composition with flagged expense and non-recoverable GST on ads",
+   "input": {
+    "platform_spend": [
+     10000.0,
+     5000.0
+    ],
+    "flagged_expenses": 2000.0,
+    "local_tax_rate": 0.18,
+    "tax_recoverable": false
+   },
+   "expected": {
+    "advertising_cost": 19700.0
+   }
+  },
+  {
+   "id": "GV-104",
+   "calc": "CALC-080",
+   "name": "Grade & Resell: resold unit carries only regrading cost",
+   "input": {
+    "original_unit_cogs": 500.0,
+    "regrade_cost": 30.0
+   },
+   "expected": {
+    "resell_cogs": 30.0
+   }
+  },
+  {
+   "id": "GV-105",
+   "calc": "CALC-093",
+   "name": "B2B taxable value with line and invoice discounts",
+   "input": {
+    "lines": [
+     {
+      "qty": 10,
+      "list": 1000.0,
+      "disc": 0.1
+     },
+     {
+      "qty": 5,
+      "list": 2000.0,
+      "disc": 0.0
+     }
+    ],
+    "invoice_discount": 1000.0
+   },
+   "expected": {
+    "line_values": [
+     9000.0,
+     10000.0
+    ],
+    "taxable": 18000.0
+   }
+  },
+  {
+   "id": "GV-106",
+   "calc": "CALC-094",
+   "name": "GST split intra-state (same state)",
+   "input": {
+    "taxable": 18000.0,
+    "rate": 0.18,
+    "supplier_state": "TN",
+    "pos_state": "TN",
+    "export_lut": false
+   },
+   "expected": {
+    "cgst": 1620.0,
+    "sgst": 1620.0,
+    "igst": 0.0,
+    "invoice_total": 21240.0
+   }
+  },
+  {
+   "id": "GV-107",
+   "calc": "CALC-094",
+   "name": "GST split inter-state and export under LUT",
+   "input": {
+    "cases": [
+     {
+      "taxable": 18000.0,
+      "rate": 0.18,
+      "supplier_state": "TN",
+      "pos_state": "KA",
+      "export_lut": false
+     },
+     {
+      "taxable": 18000.0,
+      "rate": 0.18,
+      "supplier_state": "TN",
+      "pos_state": "EXPORT",
+      "export_lut": true
+     }
+    ]
+   },
+   "expected": {
+    "results": [
+     {
+      "cgst": 0.0,
+      "sgst": 0.0,
+      "igst": 3240.0
+     },
+     {
+      "cgst": 0.0,
+      "sgst": 0.0,
+      "igst": 0.0
+     }
+    ]
+   }
+  },
+  {
+   "id": "GV-108",
+   "calc": "CALC-095",
+   "name": "B2B net sales with taxable freight and credit note",
+   "input": {
+    "taxable": 18000.0,
+    "freight_charged_taxable": 500.0,
+    "credit_note_taxable": 2000.0
+   },
+   "expected": {
+    "net_sales": 16500.0
+   }
+  },
+  {
+   "id": "GV-109",
+   "calc": "CALC-096",
+   "name": "B2B COGS on billed units; free (FOC) units to expense (stock relieved = billed + free)",
+   "input": {
+    "foc_units": 2,
+    "unit_cogs": 400.0,
+    "billed_units": 15
+   },
+   "expected": {
+    "cogs": 6000.0,
+    "free_goods_expense": 800.0
+   }
+  },
+  {
+   "id": "GV-110",
+   "calc": "CALC-097",
+   "name": "B2B contribution",
+   "input": {
+    "net_sales": 16500.0,
+    "cogs": 6000.0,
+    "freight_borne": 700.0,
+    "schemes": 500.0,
+    "commission_rate": 0.02,
+    "bank_charges": 50.0,
+    "free_goods_expense": 800.0
+   },
+   "expected": {
+    "commission": 330.0,
+    "contribution": 8120.0
+   }
+  },
+  {
+   "id": "GV-111",
+   "calc": "CALC-098",
+   "name": "Receivables with TDS, aging bucket, MSME flag and DSO",
+   "input": {
+    "invoice_total": 21240.0,
+    "taxable": 18000.0,
+    "receipts": 15000.0,
+    "tds_rate": 0.001,
+    "credit_notes": 0.0,
+    "invoice_date": "2026-08-01",
+    "as_of": "2026-09-20",
+    "terms_days": 30,
+    "credit_sales_period": 21240.0,
+    "udyam_registered": true,
+    "cum_taxable_fy_before": 6000000.0,
+    "tds_threshold": 5000000.0,
+    "window_days": 50
+   },
+   "expected": {
+    "tds": 18.0,
+    "outstanding": 6222.0,
+    "age_days": 50,
+    "bucket": "46-60",
+    "days_overdue": 20,
+    "msme_flag": true,
+    "dso": 14.6
+   }
+  },
+  {
+   "id": "GV-112",
+   "calc": "CALC-099",
+   "name": "Export invoice FX gain on realisation and 9-month deadline",
+   "input": {
+    "usd": 10000.0,
+    "invoice_rate": 83.5,
+    "receipt_rate": 84.1,
+    "invoice_date": "2026-01-10",
+    "received": true
+   },
+   "expected": {
+    "inr_invoice": 835000.0,
+    "inr_received": 841000.0,
+    "fx_gain": 6000.0,
+    "realisation_deadline": "2026-10-10"
+   }
+  },
+  {
+   "id": "GV-113",
+   "calc": "CALC-100",
+   "name": "B2B duplicate of a Shopify draft order is blocked",
+   "input": {
+    "b2b_ref": "DO-1001",
+    "shopify_draft_refs": [
+     "DO-1001",
+     "DO-1002"
+    ],
+    "amazon_business_refs": []
+   },
+   "expected": {
+    "status": "BLOCKED_DUPLICATE"
+   }
+  },
+  {
+   "id": "GV-114",
+   "calc": "CALC-101",
+   "name": "Consolidation eliminates intercompany B2B sales",
+   "input": {
+    "entities": {
+     "IN": {
+      "amazon": 100000.0,
+      "shopify": 50000.0,
+      "b2b_external": 30000.0,
+      "b2b_intercompany": 40000.0
+     },
+     "UK": {
+      "amazon": 60000.0
+     }
+    }
+   },
+   "expected": {
+    "entity_IN_total": 220000.0,
+    "consolidated_external": 240000.0,
+    "eliminated": 40000.0
+   }
+  },
+  {
+   "id": "GV-115",
+   "calc": "CALC-102",
+   "name": "Compliance flags: IRN 30-day and e-way bill threshold",
+   "input": {
+    "aato_cr": 15,
+    "doc_date": "2026-08-01",
+    "as_of": "2026-09-05",
+    "irn": null,
+    "consignment_value": 60000.0,
+    "ewb_threshold": 50000.0
+   },
+   "expected": {
+    "irn_required": true,
+    "irn_missing": true,
+    "irn_late": true,
+    "ewb_required": true
+   }
+  },
+  {
+   "id": "GV-116",
+   "calc": "CALC-103",
+   "name": "Commission, price realisation and ECL provision",
+   "input": {
+    "commission_rate": 0.025,
+    "collected": 40000.0,
+    "net_price": 900.0,
+    "list_price": 1000.0,
+    "buckets": [
+     [
+      100000.0,
+      0.005
+     ],
+     [
+      20000.0,
+      0.05
+     ],
+     [
+      10000.0,
+      0.25
+     ]
+    ]
+   },
+   "expected": {
+    "commission": 1000.0,
+    "realisation": 0.9,
+    "ecl": 4000.0
+   }
+  },
+  {
+   "id": "GV-117",
+   "calc": "CALC-105",
+   "name": "Actual courier cost replaces profile estimate; estimate kept when no actual",
+   "input": {
+    "orders": [
+     {
+      "estimate": 80.0,
+      "actual": 112.0
+     },
+     {
+      "estimate": 80.0,
+      "actual": null
+     }
+    ]
+   },
+   "expected": {
+    "applied": [
+     112.0,
+     80.0
+    ],
+    "source": [
+     "ACTUAL",
+     "ESTIMATE"
+    ]
+   }
+  },
+  {
+   "id": "GV-118",
+   "calc": "CALC-104",
+   "name": "RTO / COD cost retained, sale excluded",
+   "input": {
+    "forward": 70.0,
+    "return": 70.0,
+    "cod_fee": 30.0,
+    "damage": 0.0,
+    "order_value": 2499.0
+   },
+   "expected": {
+    "rto_cost": 170.0,
+    "sales_recognised": 0.0
+   }
+  },
+  {
+   "id": "GV-119",
+   "calc": "CALC-106",
+   "name": "Replenishment due date and repurchase rate",
+   "input": {
+    "last_purchase": "2026-03-01",
+    "cycle_days": 180,
+    "buyers_due": 200,
+    "repurchased_within_grace": 24
+   },
+   "expected": {
+    "due_date": "2026-08-28",
+    "repurchase_rate": 0.12
+   }
+  },
+  {
+   "id": "GV-120",
+   "calc": "CALC-107",
+   "name": "Target vs actual variance",
+   "input": {
+    "actual": 950000.0,
+    "target": 1000000.0
+   },
+   "expected": {
+    "variance": -50000.0,
+    "variance_pct": -0.05
+   }
+  },
+  {
+   "id": "GV-121",
+   "calc": "CALC-081",
+   "name": "Presentation FX at period-end rate vs ledger daily rates",
+   "input": {
+    "amounts_gbp": [
+     100.0,
+     100.0
+    ],
+    "daily_rates": [
+     105.0,
+     107.0
+    ],
+    "period_end_rate": 108.0
+   },
+   "expected": {
+    "compat_display_inr": 21600.0,
+    "ledger_inr": 21200.0
+   }
+  },
+  {
+   "id": "GV-122",
+   "calc": "CALC-082",
+   "name": "Refund booking period by policy",
+   "input": {
+    "order_date": "2026-08-28",
+    "refund_date": "2026-09-02"
+   },
+   "expected": {
+    "refund_date_policy": "2026-09",
+    "order_date_policy": "2026-08"
+   }
+  },
+  {
+   "id": "GV-123",
+   "calc": "CALC-083",
+   "name": "Repeat customer is brand-scoped",
+   "input": {
+    "orders": [
+     [
+      "b1",
+      "RAMA"
+     ],
+     [
+      "b1",
+      "RAMA"
+     ],
+     [
+      "b2",
+      "RAMA"
+     ],
+     [
+      "b3",
+      "PHOENIX"
+     ],
+     [
+      "b3",
+      "RAMA"
+     ]
+    ]
+   },
+   "expected": {
+    "repeat_rate": 0.3333
+   }
+  },
+  {
+   "id": "GV-124",
+   "calc": "CALC-084",
+   "name": "Trailing-window LTV set",
+   "input": {
+    "orders": [
+     {
+      "buyer": "b1",
+      "date": "2026-09-01",
+      "sales": 1000.0,
+      "profit": 200.0,
+      "first_ever": false
+     },
+     {
+      "buyer": "b1",
+      "date": "2026-09-21",
+      "sales": 500.0,
+      "profit": 100.0,
+      "first_ever": false
+     },
+     {
+      "buyer": "b2",
+      "date": "2026-09-05",
+      "sales": 2000.0,
+      "profit": 400.0,
+      "first_ever": true
+     },
+     {
+      "buyer": "b3",
+      "date": "2026-09-10",
+      "sales": 1000.0,
+      "profit": 100.0,
+      "first_ever": true
+     }
+    ],
+    "ad_spend": 1000.0
+   },
+   "expected": {
+    "customers": 3,
+    "new_customers": 2,
+    "sales_per_customer": 1500.0,
+    "orders_per_customer": 1.33,
+    "profit_per_customer": 266.67,
+    "repurchase_rate": 0.3333,
+    "avg_days_between_orders": 20.0,
+    "cac": 500.0,
+    "roas": 4.5,
+    "poas": 0.8
+   }
+  },
+  {
+   "id": "GV-125",
+   "calc": "CALC-085",
+   "name": "BSR delta (negative = improved)",
+   "input": {
+    "today": 5000,
+    "previous": 6000
+   },
+   "expected": {
+    "delta": -1000
+   }
+  },
+  {
+   "id": "GV-126",
+   "calc": "CALC-086",
+   "name": "PO close: freight allocated by units into landed unit cost",
+   "input": {
+    "units": [
+     100,
+     50
+    ],
+    "unit_prices": [
+     400.0,
+     800.0
+    ],
+    "freight": 6000.0
+   },
+   "expected": {
+    "landed_unit": [
+     440.0,
+     840.0
+    ]
+   }
+  },
+  {
+   "id": "GV-127",
+   "calc": "CALC-087",
+   "name": "Product master matching by identifier",
+   "input": {
+    "master": {
+     "id": "PM-1",
+     "asin": "B0SYNTH001",
+     "sku": "SKU-GF-17L",
+     "ean": "8900000000017"
+    },
+    "incoming": [
+     {
+      "sku": "SKU-GF-17L"
+     },
+     {
+      "ean": "8900000000999"
+     }
+    ]
+   },
+   "expected": {
+    "matches": [
+     "PM-1",
+     null
+    ]
+   }
+  },
+  {
+   "id": "GV-128",
+   "calc": "CALC-088",
+   "name": "Bid recommendation clamped to step; below click threshold no change",
+   "input": {
+    "cases": [
+     {
+      "current": 10.0,
+      "target_acos": 0.25,
+      "actual_acos": 0.4,
+      "clicks": 50
+     },
+     {
+      "current": 10.0,
+      "target_acos": 0.25,
+      "actual_acos": 0.4,
+      "clicks": 5
+     }
+    ],
+    "step": 0.2,
+    "min_clicks": 20
+   },
+   "expected": {
+    "bids": [
+     8.0,
+     10.0
+    ]
+   }
+  },
+  {
+   "id": "GV-129",
+   "calc": "CALC-089",
+   "name": "Profit forecast 30 days capped by stock",
+   "input": {
+    "velocity": 5,
+    "available": 100,
+    "profit_per_unit": 150.0
+   },
+   "expected": {
+    "forecast": 15000.0
+   }
+  },
+  {
+   "id": "GV-130",
+   "calc": "CALC-090",
+   "name": "Order inclusion rules by status and tag",
+   "input": {
+    "orders": [
+     {
+      "status": "paid",
+      "tags": []
+     },
+     {
+      "status": "cancelled",
+      "tags": []
+     },
+     {
+      "status": "paid",
+      "tags": [
+       "COD_CANCELLED"
+      ]
+     },
+     {
+      "status": "paid",
+      "tags": [],
+      "channel": "draft"
+     }
+    ],
+    "exclude_status": [
+     "cancelled"
+    ],
+    "exclude_tags": [
+     "COD_CANCELLED"
+    ],
+    "exclude_channels": []
+   },
+   "expected": {
+    "included": 2
+   }
+  },
+  {
+   "id": "GV-131",
+   "calc": "CALC-091",
+   "name": "Variable expense bases and advertising flag",
+   "input": {
+    "sales": 10000.0,
+    "orders": 20,
+    "facebook_spend": 3000.0,
+    "rules": [
+     [
+      "pct_sales",
+      0.02,
+      false
+     ],
+     [
+      "per_order",
+      5.0,
+      false
+     ],
+     [
+      "pct_facebook",
+      0.1,
+      true
+     ]
+    ]
+   },
+   "expected": {
+    "total": 600.0,
+    "under_advertising": 300.0
+   }
+  },
+  {
+   "id": "GV-132",
+   "calc": "CALC-092",
+   "name": "Shared physical stock counted once",
+   "input": {
+    "records": [
+     {
+      "source": "shopify_location",
+      "location": "Rama Factory",
+      "units": 100
+     },
+     {
+      "source": "b2b_warehouse",
+      "location": "Factory",
+      "units": 100
+     }
+    ],
+    "mapping": {
+     "Rama Factory": "WH-FACTORY",
+     "Factory": "WH-FACTORY"
+    }
+   },
+   "expected": {
+    "units_by_warehouse": {
+     "WH-FACTORY": 100
+    }
+   }
+  },
+  {
+   "id": "GV-133",
+   "calc": "CALC-037",
+   "name": "Weighted velocity over windows and OOS-adjusted window",
+   "input": {
+    "windows": [
+     [
+      3,
+      12,
+      3
+     ],
+     [
+      7,
+      35,
+      7
+     ],
+     [
+      30,
+      120,
+      30
+     ],
+     [
+      60,
+      216,
+      60
+     ],
+     [
+      180,
+      720,
+      180
+     ]
+    ],
+    "weights": [
+     0.15,
+     0.15,
+     0.3,
+     0.25,
+     0.15
+    ],
+    "oos_case": {
+     "units": 100,
+     "days": 30,
+     "oos_days": 5
+    }
+   },
+   "expected": {
+    "velocity": 4.05,
+    "oos_window_velocity": 4.0
+   }
+  },
+  {
+   "id": "GV-134",
+   "calc": "CALC-039",
+   "name": "Reorder quantity with seasonality, lead-time components and carton rounding",
+   "input": {
+    "velocity": 4,
+    "season": 1.3,
+    "mfg": 30,
+    "ship": 10,
+    "buffer": 5,
+    "target": 90,
+    "available": 300,
+    "reserved": 20,
+    "incoming": 0,
+    "ordered": 100,
+    "carton": 24
+   },
+   "expected": {
+    "raw": 282.0,
+    "reorder_qty": 288
+   }
+  },
+  {
+   "id": "GV-135",
+   "calc": "CALC-014",
+   "name": "Margin denominator setting (net sales vs gross sales)",
+   "input": {
+    "net_profit": -1000.0,
+    "sales": 11800.0,
+    "output_tax": 1800.0
+   },
+   "expected": {
+    "margin_net_basis": -0.1,
+    "margin_gross_basis": -0.0847
+   }
+  },
+  {
+   "id": "GV-136",
+   "calc": "CALC-022",
+   "name": "Payment fee with platform third-party fee; Auto uses actual",
+   "input": {
+    "amount": 5000.0,
+    "platform_pct": 0.005,
+    "gateway_pct": 0.02,
+    "fixed": 0.0,
+    "auto_actual": 118.0
+   },
+   "expected": {
+    "rule_fee": 125.0,
+    "auto_fee": 118.0
+   }
+  },
+  {
+   "id": "GV-137",
+   "calc": "CALC-020",
+   "name": "Shipping profile precedence: product-specific beats latest general",
+   "input": {
+    "profiles": [
+     {
+      "scope": "all",
+      "start": "2026-01-01",
+      "cost": 60.0
+     },
+     {
+      "scope": "product",
+      "start": "2026-02-01",
+      "cost": 80.0
+     },
+     {
+      "scope": "all",
+      "start": "2026-06-01",
+      "cost": 70.0
+     }
+    ],
+    "order_date": "2026-07-01"
+   },
+   "expected": {
+    "cost": 80.0
+   }
+  },
+  {
+   "id": "GV-138",
+   "calc": "CALC-009",
+   "name": "Unsellable return with recovery percentage",
+   "input": {
+    "unit_cogs": 900.0,
+    "recovery_pct": 0.2,
+    "qty": 1,
+    "disposal": 0.0
+   },
+   "expected": {
+    "unsellable_loss": 720.0
+   }
+  },
+  {
+   "id": "GV-139",
+   "calc": "CALC-101",
+   "name": "Channel mix shares",
+   "input": {
+    "channels": {
+     "amazon": 600.0,
+     "shopify": 300.0,
+     "b2b": 100.0
+    }
+   },
+   "expected": {
+    "shares": {
+     "amazon": 0.6,
+     "shopify": 0.3,
+     "b2b": 0.1
+    }
+   }
+  },
+  {
+   "id": "GV-140",
+   "calc": "CALC-047",
+   "name": "MCF economics assigned to Shopify channel when Amazon ignores multi-channel",
+   "input": {
+    "shopify_order_sales": 2499.0,
+    "mcf_fee": -95.0,
+    "cogs": -800.0,
+    "ignore_multichannel": true
+   },
+   "expected": {
+    "shopify": {
+     "sales": 2499.0,
+     "fees": -95.0,
+     "cogs": -800.0
+    },
+    "amazon": {
+     "sales": 0.0,
+     "fees": 0.0,
+     "cogs": 0.0
+    }
+   }
+  },
+  {
+   "id": "GV-141",
+   "calc": "CALC-030",
+   "name": "TACOS on Sellerboard-compatible (tax-inclusive) sales basis",
+   "input": {
+    "advertising_cost": 19700.0,
+    "compat_sales": 236400.0
+   },
+   "expected": {
+    "tacos": 0.0833
+   }
+  },
+  {
+   "id": "GV-142",
+   "calc": "CALC-062",
+   "name": "Days until next order \u2014 optional pipeline-inclusive basis (non-compat)",
+   "input": {
+    "available": 100,
+    "reserved": 20,
+    "incoming": 200,
+    "ordered": 0,
+    "velocity": 4,
+    "mfg": 30,
+    "ship": 10,
+    "buffer": 5
+   },
+   "expected": {
+    "days_until_next_order": 35
+   }
+  },
+  {
+   "id": "GV-143",
+   "calc": "CALC-010",
+   "name": "Refund single-count rule: principal deducted once; both presentation settings give the same gross profit",
+   "input": {
+    "gross_sales": 5797.0,
+    "promo": 300.0,
+    "refunded_principal": 799.0,
+    "fee_reversal": 100.0,
+    "refund_admin_fee": 20.0,
+    "fees": -486.85,
+    "cogs": -2700.0
+   },
+   "expected": {
+    "gp_principal_in_net_sales": 1591.15,
+    "gp_principal_in_refund_cost": 1591.15,
+    "equal": true
+   }
+  },
+  {
+   "id": "GV-144",
+   "calc": "CALC-102",
+   "name": "E-invoice: AATO between \u20b95 cr and \u20b910 cr \u2014 IRN required, 30-day late rule not applicable",
+   "input": {
+    "aato_cr": 7,
+    "doc_date": "2026-08-01",
+    "as_of": "2026-09-05",
+    "irn": null,
+    "consignment_value": 40000.0,
+    "ewb_threshold": 50000.0
+   },
+   "expected": {
+    "irn_required": true,
+    "irn_missing": true,
+    "irn_late": false,
+    "ewb_required": false
+   }
+  },
+  {
+   "id": "GV-145",
+   "calc": "CALC-025",
+   "name": "India Item TDS presentation setting; identity holds within each view",
+   "input": {
+    "fees_excl_tds": -25000.0,
+    "item_tds": -100.0
+   },
+   "expected": {
+    "in_amazon_fees": {
+     "amazon_fees": -25100.0,
+     "tds_asset": 0.0
+    },
+    "recoverable_asset": {
+     "amazon_fees": -25000.0,
+     "tds_asset": 100.0
+    }
+   }
+  },
+  {
+   "id": "GV-146",
+   "calc": "CALC-108",
+   "name": "Period comparison \u0394 and \u0394% (null on zero prior; |prior| denominator)",
+   "input": {
+    "cases": [
+     [
+      110.0,
+      100.0
+     ],
+     [
+      50.0,
+      0.0
+     ],
+     [
+      -25.0,
+      -50.0
+     ]
+    ]
+   },
+   "expected": {
+    "results": [
+     {
+      "delta": 10.0,
+      "pct": 0.1
+     },
+     {
+      "delta": 50.0,
+      "pct": null
+     },
+     {
+      "delta": 25.0,
+      "pct": 0.5
+     }
+    ]
+   }
+  },
+  {
+   "id": "GV-147",
+   "calc": "CALC-109",
+   "name": "Amazon shipping and giftwrap charges net of chargebacks (PROPOSED mapping)",
+   "input": {
+    "shipping_charge": 100.0,
+    "giftwrap": 50.0,
+    "shipping_chargeback": -100.0,
+    "giftwrap_chargeback": -50.0
+   },
+   "expected": {
+    "shipping_line": 0.0,
+    "giftwrap_line": 0.0
+   }
+  },
+  {
+   "id": "GV-148",
+   "calc": "CALC-110",
+   "name": "Intercompany unrealised profit in buyer's closing stock",
+   "input": {
+    "ic_sales": 40000.0,
+    "ic_cost": 25000.0,
+    "unsold_share": 0.25
+   },
+   "expected": {
+    "unrealised_profit": 3750.0,
+    "eliminated_sales": 40000.0
+   }
+  },
+  {
+   "id": "GV-149",
+   "calc": "CALC-111",
+   "name": "Region attribution: Shopify ship-to, B2B place of supply, Amazon via region report",
+   "input": {
+    "rows": [
+     [
+      "TN",
+      1000.0
+     ],
+     [
+      "KA",
+      500.0
+     ],
+     [
+      "TN",
+      250.0
+     ],
+     [
+      "UNKNOWN",
+      100.0
+     ]
+    ]
+   },
+   "expected": {
+    "by_region": {
+     "TN": 1250.0,
+     "KA": 500.0,
+     "UNKNOWN": 100.0
+    }
+   }
+  },
+  {
+   "id": "GV-150",
+   "calc": "CALC-112",
+   "name": "PPC search-term recommendations (PROPOSED thresholds)",
+   "input": {
+    "terms": [
+     {
+      "orders": 3,
+      "acos": 0.2,
+      "clicks": 40
+     },
+     {
+      "orders": 0,
+      "acos": null,
+      "clicks": 25
+     },
+     {
+      "orders": 1,
+      "acos": 0.9,
+      "clicks": 30
+     }
+    ],
+    "target_acos": 0.3,
+    "min_orders": 2,
+    "min_clicks": 20,
+    "negate_factor": 2.5
+   },
+   "expected": {
+    "actions": [
+     "HARVEST",
+     "NEGATE",
+     "NEGATE"
+    ]
+   }
+  },
+  {
+   "id": "GV-151",
+   "calc": "CALC-061",
+   "name": "Attributed marketing metrics (ROAS, CPO, CVR, AOV)",
+   "input": {
+    "attributed_sales": 252000.0,
+    "spend": 580000.0,
+    "attributed_orders": 42,
+    "clicks": 72000
+   },
+   "expected": {
+    "attributed_roas": 0.4345,
+    "cpo": 13809.52,
+    "cvr": 0.0006,
+    "aov": 6000.0
+   }
+  },
+  {
+   "id": "GV-152",
+   "calc": "CALC-113",
+   "name": "US marketplace-facilitator sales tax nets to zero and is excluded from Sales and the tax line",
+   "input": {
+    "regime": "SALES_TAX_MF",
+    "item_price": 100.0,
+    "tax_collected": 8.25,
+    "tax_withheld": -8.25,
+    "fees": -15.0,
+    "cogs": -30.0
+   },
+   "expected": {
+    "sales": 100.0,
+    "tax_line": 0.0,
+    "gross_profit": 55.0
+   }
+  },
+  {
+   "id": "GV-153",
+   "calc": "CALC-113",
+   "name": "UK seller-liable VAT (tax-inclusive price) shown as a signed output-tax line",
+   "input": {
+    "regime": "VAT_SELLER",
+    "item_price": 120.0,
+    "tax_collected": 20.0,
+    "tax_withheld": 0.0,
+    "fees": -18.0,
+    "cogs": -40.0
+   },
+   "expected": {
+    "sales": 120.0,
+    "tax_line": -20.0,
+    "gross_profit": 42.0
+   }
+  },
+  {
+   "id": "GV-154",
+   "calc": "CALC-114",
+   "name": "Walmart fee mapping to compat lines with an unmapped fee type (conservation + alert)",
+   "input": {
+    "mapping": {
+     "Commission": "marketplace_fees",
+     "WFSFulfillmentFee": "marketplace_fees",
+     "WFSStorageFee": "marketplace_fees",
+     "WalmartConnectSpend": "advertising"
+    },
+    "fees": [
+     [
+      "Commission",
+      -15.0
+     ],
+     [
+      "WFSFulfillmentFee",
+      -8.0
+     ],
+     [
+      "WFSStorageFee",
+      -1.0
+     ],
+     [
+      "WalmartConnectSpend",
+      -5.0
+     ],
+     [
+      "XYZAdjustment",
+      -2.0
+     ]
+    ]
+   },
+   "expected": {
+    "lines": {
+     "marketplace_fees": -24.0,
+     "advertising": -5.0,
+     "unclassified_fees": -2.0
+    },
+    "total": -31.0,
+    "source_total": -31.0,
+    "flags": [
+     "UNCLASSIFIED_FEE"
+    ]
+   }
+  },
+  {
+   "id": "GV-155",
+   "calc": "CALC-079",
+   "name": "Walmart Connect spend counted once: spend_source decides connector vs settlement line",
+   "input": {
+    "connector_spend": -5.0,
+    "settlement": [
+     [
+      "WalmartConnectSpend",
+      -5.0
+     ],
+     [
+      "Commission",
+      -15.0
+     ]
+    ],
+    "mapping": {
+     "Commission": "marketplace_fees",
+     "WalmartConnectSpend": "advertising"
+    },
+    "cases": [
+     "connector",
+     "settlement"
+    ]
+   },
+   "expected": {
+    "connector": {
+     "advertising": -5.0,
+     "marketplace_fees": -15.0,
+     "excluded": -5.0
+    },
+    "settlement": {
+     "advertising": -5.0,
+     "marketplace_fees": -15.0,
+     "excluded": -5.0
+    }
+   }
+  }
+ ]
+}
